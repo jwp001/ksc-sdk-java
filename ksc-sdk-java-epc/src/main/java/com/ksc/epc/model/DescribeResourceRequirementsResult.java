@@ -38,9 +38,11 @@ public class DescribeResourceRequirementsResult implements Serializable, Cloneab
     public void setRequestId(String RequestId) {
         this.RequestId = RequestId;
     }
+
     public String getRequestId() {
         return RequestId;
     }
+
     public void addResourceRequirementSet(ResourceRequirement... resourceRequirements) {
 		if (this.ResourceRequirementSet == null) {
 			this.ResourceRequirementSet = new SdkInternalList<ResourceRequirement>();
@@ -53,9 +55,11 @@ public class DescribeResourceRequirementsResult implements Serializable, Cloneab
     public void setResourceRequirementSet(List<ResourceRequirement> resourceRequirements) {
         this.ResourceRequirementSet = new SdkInternalList<ResourceRequirement>(resourceRequirements);
     }
+
     public  List<ResourceRequirement> getResourceRequirementSet() {
         return ResourceRequirementSet;
     }
+
 
     @Override
     public DescribeResourceRequirementsResult clone() {
@@ -66,5 +70,9 @@ public class DescribeResourceRequirementsResult implements Serializable, Cloneab
                     "Got a CloneNotSupportedException from Object.clone() "
                             + "even though we're Cloneable!", e);
         }
+    }
+
+    public String toString() {
+        return "DescribeResourceRequirementsResult(RequestId=" + this.getRequestId() + ",ResourceRequirementSet=" + this.getResourceRequirementSet() + ")";
     }
 }

@@ -70,12 +70,15 @@ public class DescribeEpcsRequest extends KscWebServiceRequest implements
 			this.filters.add(filter);
 		}
 	}
+
     public void setFilters(List<Filter> filters) {
         this.filters = new com.ksc.internal.SdkInternalList<Filter>(filters);
     }
+
     public  List<Filter> getFilters() {
         return filters;
     }
+
     public void addHostIds(String... hostIds){
         if (this.hostIds == null) {
             this.hostIds = new com.ksc.internal.SdkInternalList<String>();
@@ -84,24 +87,31 @@ public class DescribeEpcsRequest extends KscWebServiceRequest implements
             this.hostIds.add(value);
         }
     }
+
     public void setHostIds(List<String> hostIds) {
         this.hostIds = new com.ksc.internal.SdkInternalList<String>(hostIds);
     }
+
     public  List<String> getHostIds() {
         return hostIds;
     }
+
     public void setMaxResults(String maxResults) {
         this.maxResults = maxResults;
     }
+
     public String getMaxResults() {
         return maxResults;
     }
+
     public void setNextToken(String nextToken) {
         this.nextToken = nextToken;
     }
+
     public String getNextToken() {
         return nextToken;
     }
+
 
     @Override
     public Request<DescribeEpcsRequest> getDryRunRequest() {
@@ -114,6 +124,10 @@ public class DescribeEpcsRequest extends KscWebServiceRequest implements
     @Override
     public DescribeEpcsRequest clone() {
         return (DescribeEpcsRequest) super.clone();
+    }
+
+    public String toString() {
+        return "DescribeEpcsRequest(filters=" + this.getFilters() + ",HostIds=" + this.getHostIds() + ",MaxResults=" + this.getMaxResults() + ",NextToken=" + this.getNextToken() + ")";
     }
 }
 

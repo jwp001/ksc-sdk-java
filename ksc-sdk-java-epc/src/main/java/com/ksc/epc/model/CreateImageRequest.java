@@ -49,15 +49,19 @@ public class CreateImageRequest extends KscWebServiceRequest implements
     public void setImageName(String imageName) {
         this.imageName = imageName;
     }
+
     public String getImageName() {
         return imageName;
     }
+
     public void setHostId(String hostId) {
         this.hostId = hostId;
     }
+
     public String getHostId() {
         return hostId;
     }
+
 
     @Override
     public Request<CreateImageRequest> getDryRunRequest() {
@@ -70,6 +74,10 @@ public class CreateImageRequest extends KscWebServiceRequest implements
     @Override
     public CreateImageRequest clone() {
         return (CreateImageRequest) super.clone();
+    }
+
+    public String toString() {
+        return "CreateImageRequest(ImageName=" + this.getImageName() + ",HostId=" + this.getHostId() + ")";
     }
 }
 

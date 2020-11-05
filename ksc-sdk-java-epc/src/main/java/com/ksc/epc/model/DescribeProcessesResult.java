@@ -44,9 +44,11 @@ public class DescribeProcessesResult implements Serializable, Cloneable {
     public void setRequestId(String RequestId) {
         this.RequestId = RequestId;
     }
+
     public String getRequestId() {
         return RequestId;
     }
+
     public void addProcessSet(Process... processs) {
 		if (this.ProcessSet == null) {
 			this.ProcessSet = new SdkInternalList<Process>();
@@ -59,21 +61,27 @@ public class DescribeProcessesResult implements Serializable, Cloneable {
     public void setProcessSet(List<Process> processs) {
         this.ProcessSet = new SdkInternalList<Process>(processs);
     }
+
     public  List<Process> getProcessSet() {
         return ProcessSet;
     }
+
     public void setTotalCount(Integer TotalCount) {
         this.TotalCount = TotalCount;
     }
+
     public Integer getTotalCount() {
         return TotalCount;
     }
+
     public void setNextToken(String NextToken) {
         this.NextToken = NextToken;
     }
+
     public String getNextToken() {
         return NextToken;
     }
+
 
     @Override
     public DescribeProcessesResult clone() {
@@ -84,5 +92,9 @@ public class DescribeProcessesResult implements Serializable, Cloneable {
                     "Got a CloneNotSupportedException from Object.clone() "
                             + "even though we're Cloneable!", e);
         }
+    }
+
+    public String toString() {
+        return "DescribeProcessesResult(RequestId=" + this.getRequestId() + ",ProcessSet=" + this.getProcessSet() + ",TotalCount=" + this.getTotalCount() + ",NextToken=" + this.getNextToken() + ")";
     }
 }

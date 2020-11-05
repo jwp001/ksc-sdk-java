@@ -44,9 +44,11 @@ public class DescribeInspectionsResult implements Serializable, Cloneable {
     public void setRequestId(String RequestId) {
         this.RequestId = RequestId;
     }
+
     public String getRequestId() {
         return RequestId;
     }
+
     public void addInspectionSet(Inspection... inspections) {
 		if (this.InspectionSet == null) {
 			this.InspectionSet = new SdkInternalList<Inspection>();
@@ -59,21 +61,27 @@ public class DescribeInspectionsResult implements Serializable, Cloneable {
     public void setInspectionSet(List<Inspection> inspections) {
         this.InspectionSet = new SdkInternalList<Inspection>(inspections);
     }
+
     public  List<Inspection> getInspectionSet() {
         return InspectionSet;
     }
+
     public void setTotalCount(Integer TotalCount) {
         this.TotalCount = TotalCount;
     }
+
     public Integer getTotalCount() {
         return TotalCount;
     }
+
     public void setNextToken(String NextToken) {
         this.NextToken = NextToken;
     }
+
     public String getNextToken() {
         return NextToken;
     }
+
 
     @Override
     public DescribeInspectionsResult clone() {
@@ -84,5 +92,9 @@ public class DescribeInspectionsResult implements Serializable, Cloneable {
                     "Got a CloneNotSupportedException from Object.clone() "
                             + "even though we're Cloneable!", e);
         }
+    }
+
+    public String toString() {
+        return "DescribeInspectionsResult(RequestId=" + this.getRequestId() + ",InspectionSet=" + this.getInspectionSet() + ",TotalCount=" + this.getTotalCount() + ",NextToken=" + this.getNextToken() + ")";
     }
 }

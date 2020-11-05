@@ -1,7 +1,7 @@
 package com.ksc.epc.model;
 
 import java.util.List;
-
+        
 public class NetworkInterfaceAttribute {
 
     /**
@@ -40,45 +40,59 @@ public class NetworkInterfaceAttribute {
     public void setNetworkInterfaceId(String networkInterfaceId) {
         this.networkInterfaceId = networkInterfaceId;
     }
+
     public String getNetworkInterfaceId() {
         return networkInterfaceId;
     }
+
     public void setNetworkInterfaceType(String networkInterfaceType) {
         this.networkInterfaceType = networkInterfaceType;
     }
+
     public String getNetworkInterfaceType() {
         return networkInterfaceType;
     }
+
     public void setSubnetId(String subnetId) {
         this.subnetId = subnetId;
     }
+
     public String getSubnetId() {
         return subnetId;
     }
+
     public void setPrivateIpAddress(String privateIpAddress) {
         this.privateIpAddress = privateIpAddress;
     }
+
     public String getPrivateIpAddress() {
         return privateIpAddress;
     }
+
     public void setDNS1(String dNS1) {
         this.dNS1 = dNS1;
     }
+
     public String getDNS1() {
         return dNS1;
     }
+
     public void setDNS2(String dNS2) {
         this.dNS2 = dNS2;
     }
+
     public String getDNS2() {
         return dNS2;
     }
+
     public void setMac(String mac) {
         this.mac = mac;
     }
+
     public String getMac() {
         return mac;
     }
+
     public void addSecurityGroupSet(SecurityGroup... securityGroupSet) {
         if (this.securityGroupSet == null) {
             this.securityGroupSet = new com.ksc.internal.SdkInternalList<SecurityGroup>();
@@ -87,11 +101,17 @@ public class NetworkInterfaceAttribute {
             this.securityGroupSet.add(value);
         }
     }
+
     public void setSecurityGroupSet(List<SecurityGroup> securityGroupSet) {
         this.securityGroupSet = new com.ksc.internal.SdkInternalList<SecurityGroup>(securityGroupSet);
     }
+
     public  List<SecurityGroup> getSecurityGroupSet() {
         return securityGroupSet;
+    }
+
+    public String toString() {
+        return "NetworkInterfaceAttribute(NetworkInterfaceId=" + this.getNetworkInterfaceId() + ",NetworkInterfaceType=" + this.getNetworkInterfaceType() + ",SubnetId=" + this.getSubnetId() + ",PrivateIpAddress=" + this.getPrivateIpAddress() + ",DNS1=" + this.getDNS1() + ",DNS2=" + this.getDNS2() + ",Mac=" + this.getMac() + ",SecurityGroupSet=" + this.getSecurityGroupSet() + ")";
     }
 
 }

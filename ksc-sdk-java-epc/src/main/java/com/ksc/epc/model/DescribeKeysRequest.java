@@ -70,12 +70,15 @@ public class DescribeKeysRequest extends KscWebServiceRequest implements
 			this.filters.add(filter);
 		}
 	}
+
     public void setFilters(List<Filter> filters) {
         this.filters = new com.ksc.internal.SdkInternalList<Filter>(filters);
     }
+
     public  List<Filter> getFilters() {
         return filters;
     }
+
     public void addKeyIds(String... keyIds){
         if (this.keyIds == null) {
             this.keyIds = new com.ksc.internal.SdkInternalList<String>();
@@ -84,24 +87,31 @@ public class DescribeKeysRequest extends KscWebServiceRequest implements
             this.keyIds.add(value);
         }
     }
+
     public void setKeyIds(List<String> keyIds) {
         this.keyIds = new com.ksc.internal.SdkInternalList<String>(keyIds);
     }
+
     public  List<String> getKeyIds() {
         return keyIds;
     }
+
     public void setMaxResults(String maxResults) {
         this.maxResults = maxResults;
     }
+
     public String getMaxResults() {
         return maxResults;
     }
+
     public void setNextToken(String nextToken) {
         this.nextToken = nextToken;
     }
+
     public String getNextToken() {
         return nextToken;
     }
+
 
     @Override
     public Request<DescribeKeysRequest> getDryRunRequest() {
@@ -114,6 +124,10 @@ public class DescribeKeysRequest extends KscWebServiceRequest implements
     @Override
     public DescribeKeysRequest clone() {
         return (DescribeKeysRequest) super.clone();
+    }
+
+    public String toString() {
+        return "DescribeKeysRequest(filters=" + this.getFilters() + ",KeyIds=" + this.getKeyIds() + ",MaxResults=" + this.getMaxResults() + ",NextToken=" + this.getNextToken() + ")";
     }
 }
 

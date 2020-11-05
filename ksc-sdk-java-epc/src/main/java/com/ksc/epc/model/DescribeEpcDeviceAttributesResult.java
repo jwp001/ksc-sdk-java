@@ -41,9 +41,11 @@ public class DescribeEpcDeviceAttributesResult implements Serializable, Cloneabl
     public void setRequestId(String RequestId) {
         this.RequestId = RequestId;
     }
+
     public String getRequestId() {
         return RequestId;
     }
+
     public void addEpcDeviceAttributeSet(DeviceAttribute... deviceAttributes) {
 		if (this.EpcDeviceAttributeSet == null) {
 			this.EpcDeviceAttributeSet = new SdkInternalList<DeviceAttribute>();
@@ -56,15 +58,19 @@ public class DescribeEpcDeviceAttributesResult implements Serializable, Cloneabl
     public void setEpcDeviceAttributeSet(List<DeviceAttribute> deviceAttributes) {
         this.EpcDeviceAttributeSet = new SdkInternalList<DeviceAttribute>(deviceAttributes);
     }
+
     public  List<DeviceAttribute> getEpcDeviceAttributeSet() {
         return EpcDeviceAttributeSet;
     }
+
     public void setNextToken(String NextToken) {
         this.NextToken = NextToken;
     }
+
     public String getNextToken() {
         return NextToken;
     }
+
 
     @Override
     public DescribeEpcDeviceAttributesResult clone() {
@@ -75,5 +81,9 @@ public class DescribeEpcDeviceAttributesResult implements Serializable, Cloneabl
                     "Got a CloneNotSupportedException from Object.clone() "
                             + "even though we're Cloneable!", e);
         }
+    }
+
+    public String toString() {
+        return "DescribeEpcDeviceAttributesResult(RequestId=" + this.getRequestId() + ",EpcDeviceAttributeSet=" + this.getEpcDeviceAttributeSet() + ",NextToken=" + this.getNextToken() + ")";
     }
 }

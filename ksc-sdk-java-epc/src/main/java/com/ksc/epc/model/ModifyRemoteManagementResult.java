@@ -36,15 +36,19 @@ public class ModifyRemoteManagementResult implements Serializable, Cloneable {
     public void setRequestId(String RequestId) {
         this.RequestId = RequestId;
     }
+
     public String getRequestId() {
         return RequestId;
     }
+
     public void setRemoteManagement(RemoteManagement RemoteManagement) {
         this.RemoteManagement = RemoteManagement;
     }
+
     public RemoteManagement getRemoteManagement() {
         return RemoteManagement;
     }
+
 
     @Override
     public ModifyRemoteManagementResult clone() {
@@ -55,5 +59,9 @@ public class ModifyRemoteManagementResult implements Serializable, Cloneable {
                     "Got a CloneNotSupportedException from Object.clone() "
                             + "even though we're Cloneable!", e);
         }
+    }
+
+    public String toString() {
+        return "ModifyRemoteManagementResult(RequestId=" + this.getRequestId() + ",RemoteManagement=" + this.getRemoteManagement() + ")";
     }
 }

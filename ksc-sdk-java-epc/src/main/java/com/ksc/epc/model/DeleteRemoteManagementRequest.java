@@ -42,9 +42,11 @@ public class DeleteRemoteManagementRequest extends KscWebServiceRequest implemen
     public void setRemoteManagementId(String remoteManagementId) {
         this.remoteManagementId = remoteManagementId;
     }
+
     public String getRemoteManagementId() {
         return remoteManagementId;
     }
+
 
     @Override
     public Request<DeleteRemoteManagementRequest> getDryRunRequest() {
@@ -57,6 +59,10 @@ public class DeleteRemoteManagementRequest extends KscWebServiceRequest implemen
     @Override
     public DeleteRemoteManagementRequest clone() {
         return (DeleteRemoteManagementRequest) super.clone();
+    }
+
+    public String toString() {
+        return "DeleteRemoteManagementRequest(RemoteManagementId=" + this.getRemoteManagementId() + ")";
     }
 }
 

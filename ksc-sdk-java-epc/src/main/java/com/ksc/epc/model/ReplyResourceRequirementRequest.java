@@ -49,15 +49,19 @@ public class ReplyResourceRequirementRequest extends KscWebServiceRequest implem
     public void setResourceRequirementId(String resourceRequirementId) {
         this.resourceRequirementId = resourceRequirementId;
     }
+
     public String getResourceRequirementId() {
         return resourceRequirementId;
     }
+
     public void setRemarks(String remarks) {
         this.remarks = remarks;
     }
+
     public String getRemarks() {
         return remarks;
     }
+
 
     @Override
     public Request<ReplyResourceRequirementRequest> getDryRunRequest() {
@@ -70,6 +74,10 @@ public class ReplyResourceRequirementRequest extends KscWebServiceRequest implem
     @Override
     public ReplyResourceRequirementRequest clone() {
         return (ReplyResourceRequirementRequest) super.clone();
+    }
+
+    public String toString() {
+        return "ReplyResourceRequirementRequest(ResourceRequirementId=" + this.getResourceRequirementId() + ",Remarks=" + this.getRemarks() + ")";
     }
 }
 

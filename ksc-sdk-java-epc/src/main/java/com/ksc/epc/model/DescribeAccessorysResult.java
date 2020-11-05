@@ -44,9 +44,11 @@ public class DescribeAccessorysResult implements Serializable, Cloneable {
     public void setRequestId(String RequestId) {
         this.RequestId = RequestId;
     }
+
     public String getRequestId() {
         return RequestId;
     }
+
     public void addAccessorySet(Accessory... accessorys) {
 		if (this.AccessorySet == null) {
 			this.AccessorySet = new SdkInternalList<Accessory>();
@@ -59,21 +61,27 @@ public class DescribeAccessorysResult implements Serializable, Cloneable {
     public void setAccessorySet(List<Accessory> accessorys) {
         this.AccessorySet = new SdkInternalList<Accessory>(accessorys);
     }
+
     public  List<Accessory> getAccessorySet() {
         return AccessorySet;
     }
+
     public void setTotalCount(Integer TotalCount) {
         this.TotalCount = TotalCount;
     }
+
     public Integer getTotalCount() {
         return TotalCount;
     }
+
     public void setNextToken(String NextToken) {
         this.NextToken = NextToken;
     }
+
     public String getNextToken() {
         return NextToken;
     }
+
 
     @Override
     public DescribeAccessorysResult clone() {
@@ -84,5 +92,9 @@ public class DescribeAccessorysResult implements Serializable, Cloneable {
                     "Got a CloneNotSupportedException from Object.clone() "
                             + "even though we're Cloneable!", e);
         }
+    }
+
+    public String toString() {
+        return "DescribeAccessorysResult(RequestId=" + this.getRequestId() + ",AccessorySet=" + this.getAccessorySet() + ",TotalCount=" + this.getTotalCount() + ",NextToken=" + this.getNextToken() + ")";
     }
 }

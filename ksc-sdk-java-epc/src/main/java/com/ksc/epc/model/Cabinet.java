@@ -27,32 +27,45 @@ public class Cabinet {
     public void setCreateTime(String createTime) {
         this.createTime = createTime;
     }
+
     public String getCreateTime() {
         return createTime;
     }
+
     public void setCabinetName(String cabinetName) {
         this.cabinetName = cabinetName;
     }
+
     public String getCabinetName() {
         return cabinetName;
     }
+
     public void setCabinetType(String cabinetType) {
         this.cabinetType = cabinetType;
     }
+
     public String getCabinetType() {
         return cabinetType;
     }
+
     public void setCabinetId(String cabinetId) {
         this.cabinetId = cabinetId;
     }
+
     public String getCabinetId() {
         return cabinetId;
     }
+
     public void setProjectId(String projectId) {
         this.projectId = projectId;
     }
+
     public String getProjectId() {
         return projectId;
+    }
+
+    public String toString() {
+        return "Cabinet(CreateTime=" + this.getCreateTime() + ",CabinetName=" + this.getCabinetName() + ",CabinetType=" + this.getCabinetType() + ",CabinetId=" + this.getCabinetId() + ",ProjectId=" + this.getProjectId() + ")";
     }
 
 }

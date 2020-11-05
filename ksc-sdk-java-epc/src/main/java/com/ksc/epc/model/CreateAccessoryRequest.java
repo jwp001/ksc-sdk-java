@@ -84,45 +84,59 @@ public class CreateAccessoryRequest extends KscWebServiceRequest implements
     public void setAccessoryType(String accessoryType) {
         this.accessoryType = accessoryType;
     }
+
     public String getAccessoryType() {
         return accessoryType;
     }
+
     public void setAccessorySuit(String accessorySuit) {
         this.accessorySuit = accessorySuit;
     }
+
     public String getAccessorySuit() {
         return accessorySuit;
     }
+
     public void setAccessoryName(String accessoryName) {
         this.accessoryName = accessoryName;
     }
+
     public String getAccessoryName() {
         return accessoryName;
     }
+
     public void setChargeType(String chargeType) {
         this.chargeType = chargeType;
     }
+
     public String getChargeType() {
         return chargeType;
     }
+
     public void setAvailabilityZone(String availabilityZone) {
         this.availabilityZone = availabilityZone;
     }
+
     public String getAvailabilityZone() {
         return availabilityZone;
     }
+
     public void setPurchaseTime(Integer purchaseTime) {
         this.purchaseTime = purchaseTime;
     }
+
     public Integer getPurchaseTime() {
         return purchaseTime;
     }
+
     public void setProjectId(String projectId) {
         this.projectId = projectId;
     }
+
     public String getProjectId() {
         return projectId;
     }
+
 
     @Override
     public Request<CreateAccessoryRequest> getDryRunRequest() {
@@ -135,6 +149,10 @@ public class CreateAccessoryRequest extends KscWebServiceRequest implements
     @Override
     public CreateAccessoryRequest clone() {
         return (CreateAccessoryRequest) super.clone();
+    }
+
+    public String toString() {
+        return "CreateAccessoryRequest(AccessoryType=" + this.getAccessoryType() + ",AccessorySuit=" + this.getAccessorySuit() + ",AccessoryName=" + this.getAccessoryName() + ",ChargeType=" + this.getChargeType() + ",AvailabilityZone=" + this.getAvailabilityZone() + ",PurchaseTime=" + this.getPurchaseTime() + ",ProjectId=" + this.getProjectId() + ")";
     }
 }
 

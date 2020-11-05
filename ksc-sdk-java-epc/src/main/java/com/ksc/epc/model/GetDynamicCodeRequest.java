@@ -42,9 +42,11 @@ public class GetDynamicCodeRequest extends KscWebServiceRequest implements
     public void setRemoteManagementId(String remoteManagementId) {
         this.remoteManagementId = remoteManagementId;
     }
+
     public String getRemoteManagementId() {
         return remoteManagementId;
     }
+
 
     @Override
     public Request<GetDynamicCodeRequest> getDryRunRequest() {
@@ -57,6 +59,10 @@ public class GetDynamicCodeRequest extends KscWebServiceRequest implements
     @Override
     public GetDynamicCodeRequest clone() {
         return (GetDynamicCodeRequest) super.clone();
+    }
+
+    public String toString() {
+        return "GetDynamicCodeRequest(RemoteManagementId=" + this.getRemoteManagementId() + ")";
     }
 }
 

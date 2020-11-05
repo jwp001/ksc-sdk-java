@@ -98,57 +98,75 @@ public class CreateProcessRequest extends KscWebServiceRequest implements
     public void setProcessId(String processId) {
         this.processId = processId;
     }
+
     public String getProcessId() {
         return processId;
     }
+
     public void setSn(String sn) {
         this.sn = sn;
     }
+
     public String getSn() {
         return sn;
     }
+
     public void setAvailabilityZone(String availabilityZone) {
         this.availabilityZone = availabilityZone;
     }
+
     public String getAvailabilityZone() {
         return availabilityZone;
     }
+
     public void setConfirm(String confirm) {
         this.confirm = confirm;
     }
+
     public String getConfirm() {
         return confirm;
     }
+
     public void setType(String type) {
         this.type = type;
     }
+
     public String getType() {
         return type;
     }
+
     public void setTitle(String title) {
         this.title = title;
     }
+
     public String getTitle() {
         return title;
     }
+
     public void setMachineCount(String machineCount) {
         this.machineCount = machineCount;
     }
+
     public String getMachineCount() {
         return machineCount;
     }
+
     public void setContent(String content) {
         this.content = content;
     }
+
     public String getContent() {
         return content;
     }
+
     public void setAttribute(String attribute) {
         this.attribute = attribute;
     }
+
     public String getAttribute() {
         return attribute;
     }
+
 
     @Override
     public Request<CreateProcessRequest> getDryRunRequest() {
@@ -161,6 +179,10 @@ public class CreateProcessRequest extends KscWebServiceRequest implements
     @Override
     public CreateProcessRequest clone() {
         return (CreateProcessRequest) super.clone();
+    }
+
+    public String toString() {
+        return "CreateProcessRequest(ProcessId=" + this.getProcessId() + ",Sn=" + this.getSn() + ",AvailabilityZone=" + this.getAvailabilityZone() + ",Confirm=" + this.getConfirm() + ",Type=" + this.getType() + ",Title=" + this.getTitle() + ",MachineCount=" + this.getMachineCount() + ",Content=" + this.getContent() + ",Attribute=" + this.getAttribute() + ")";
     }
 }
 

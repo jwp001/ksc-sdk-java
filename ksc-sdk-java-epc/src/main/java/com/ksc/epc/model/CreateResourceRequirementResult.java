@@ -36,15 +36,19 @@ public class CreateResourceRequirementResult implements Serializable, Cloneable 
     public void setRequestId(String RequestId) {
         this.RequestId = RequestId;
     }
+
     public String getRequestId() {
         return RequestId;
     }
+
     public void setResourceRequirement(ResourceRequirement ResourceRequirement) {
         this.ResourceRequirement = ResourceRequirement;
     }
+
     public ResourceRequirement getResourceRequirement() {
         return ResourceRequirement;
     }
+
 
     @Override
     public CreateResourceRequirementResult clone() {
@@ -55,5 +59,9 @@ public class CreateResourceRequirementResult implements Serializable, Cloneable 
                     "Got a CloneNotSupportedException from Object.clone() "
                             + "even though we're Cloneable!", e);
         }
+    }
+
+    public String toString() {
+        return "CreateResourceRequirementResult(RequestId=" + this.getRequestId() + ",ResourceRequirement=" + this.getResourceRequirement() + ")";
     }
 }

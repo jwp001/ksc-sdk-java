@@ -70,12 +70,15 @@ public class DescribeEpcDeviceAttributesRequest extends KscWebServiceRequest imp
 			this.filters.add(filter);
 		}
 	}
+
     public void setFilters(List<Filter> filters) {
         this.filters = new com.ksc.internal.SdkInternalList<Filter>(filters);
     }
+
     public  List<Filter> getFilters() {
         return filters;
     }
+
     public void addDeviceAttributeIds(String... deviceAttributeIds){
         if (this.deviceAttributeIds == null) {
             this.deviceAttributeIds = new com.ksc.internal.SdkInternalList<String>();
@@ -84,24 +87,31 @@ public class DescribeEpcDeviceAttributesRequest extends KscWebServiceRequest imp
             this.deviceAttributeIds.add(value);
         }
     }
+
     public void setDeviceAttributeIds(List<String> deviceAttributeIds) {
         this.deviceAttributeIds = new com.ksc.internal.SdkInternalList<String>(deviceAttributeIds);
     }
+
     public  List<String> getDeviceAttributeIds() {
         return deviceAttributeIds;
     }
+
     public void setMaxResults(String maxResults) {
         this.maxResults = maxResults;
     }
+
     public String getMaxResults() {
         return maxResults;
     }
+
     public void setNextToken(String nextToken) {
         this.nextToken = nextToken;
     }
+
     public String getNextToken() {
         return nextToken;
     }
+
 
     @Override
     public Request<DescribeEpcDeviceAttributesRequest> getDryRunRequest() {
@@ -114,6 +124,10 @@ public class DescribeEpcDeviceAttributesRequest extends KscWebServiceRequest imp
     @Override
     public DescribeEpcDeviceAttributesRequest clone() {
         return (DescribeEpcDeviceAttributesRequest) super.clone();
+    }
+
+    public String toString() {
+        return "DescribeEpcDeviceAttributesRequest(filters=" + this.getFilters() + ",DeviceAttributeIds=" + this.getDeviceAttributeIds() + ",MaxResults=" + this.getMaxResults() + ",NextToken=" + this.getNextToken() + ")";
     }
 }
 

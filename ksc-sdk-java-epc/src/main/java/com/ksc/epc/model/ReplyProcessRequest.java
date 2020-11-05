@@ -49,15 +49,19 @@ public class ReplyProcessRequest extends KscWebServiceRequest implements
     public void setOperationProcessId(String operationProcessId) {
         this.operationProcessId = operationProcessId;
     }
+
     public String getOperationProcessId() {
         return operationProcessId;
     }
+
     public void setRemarks(String remarks) {
         this.remarks = remarks;
     }
+
     public String getRemarks() {
         return remarks;
     }
+
 
     @Override
     public Request<ReplyProcessRequest> getDryRunRequest() {
@@ -70,6 +74,10 @@ public class ReplyProcessRequest extends KscWebServiceRequest implements
     @Override
     public ReplyProcessRequest clone() {
         return (ReplyProcessRequest) super.clone();
+    }
+
+    public String toString() {
+        return "ReplyProcessRequest(OperationProcessId=" + this.getOperationProcessId() + ",Remarks=" + this.getRemarks() + ")";
     }
 }
 

@@ -11,8 +11,13 @@ public class SecurityGroup {
     public void setSecurityGroupId(String securityGroupId) {
         this.securityGroupId = securityGroupId;
     }
+
     public String getSecurityGroupId() {
         return securityGroupId;
+    }
+
+    public String toString() {
+        return "SecurityGroup(SecurityGroupId=" + this.getSecurityGroupId() + ")";
     }
 
 }

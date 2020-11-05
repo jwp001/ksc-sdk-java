@@ -23,26 +23,37 @@ public class Key {
     public void setKeyId(String keyId) {
         this.keyId = keyId;
     }
+
     public String getKeyId() {
         return keyId;
     }
+
     public void setPublicKey(String publicKey) {
         this.publicKey = publicKey;
     }
+
     public String getPublicKey() {
         return publicKey;
     }
+
     public void setCreateTime(String createTime) {
         this.createTime = createTime;
     }
+
     public String getCreateTime() {
         return createTime;
     }
+
     public void setKeyName(String keyName) {
         this.keyName = keyName;
     }
+
     public String getKeyName() {
         return keyName;
+    }
+
+    public String toString() {
+        return "Key(KeyId=" + this.getKeyId() + ",PublicKey=" + this.getPublicKey() + ",CreateTime=" + this.getCreateTime() + ",KeyName=" + this.getKeyName() + ")";
     }
 
 }

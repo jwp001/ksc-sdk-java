@@ -19,20 +19,29 @@ public class Stock {
     public void setHostType(String hostType) {
         this.hostType = hostType;
     }
+
     public String getHostType() {
         return hostType;
     }
+
     public void setInstanceCount(Integer instanceCount) {
         this.instanceCount = instanceCount;
     }
+
     public Integer getInstanceCount() {
         return instanceCount;
     }
+
     public void setAvailabilityZone(String availabilityZone) {
         this.availabilityZone = availabilityZone;
     }
+
     public String getAvailabilityZone() {
         return availabilityZone;
+    }
+
+    public String toString() {
+        return "Stock(HostType=" + this.getHostType() + ",InstanceCount=" + this.getInstanceCount() + ",AvailabilityZone=" + this.getAvailabilityZone() + ")";
     }
 
 }

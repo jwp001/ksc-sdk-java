@@ -42,9 +42,11 @@ public class DescribePhysicalMonitorRequest extends KscWebServiceRequest impleme
     public void setHostId(String hostId) {
         this.hostId = hostId;
     }
+
     public String getHostId() {
         return hostId;
     }
+
 
     @Override
     public Request<DescribePhysicalMonitorRequest> getDryRunRequest() {
@@ -57,6 +59,10 @@ public class DescribePhysicalMonitorRequest extends KscWebServiceRequest impleme
     @Override
     public DescribePhysicalMonitorRequest clone() {
         return (DescribePhysicalMonitorRequest) super.clone();
+    }
+
+    public String toString() {
+        return "DescribePhysicalMonitorRequest(HostId=" + this.getHostId() + ")";
     }
 }
 

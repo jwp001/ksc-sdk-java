@@ -5,6 +5,7 @@ import com.ksc.Request;
 import com.ksc.model.DryRunSupportedRequest;
 import com.ksc.epc.model.transform.DescribeInspectionsRequestMarshaller;
 import com.ksc.model.Filter;
+import java.util.List;
 
 import java.io.Serializable;
 
@@ -62,24 +63,31 @@ public class DescribeInspectionsRequest extends KscWebServiceRequest implements
 			this.filters.add(filter);
 		}
 	}
+
     public void setFilters(List<Filter> filters) {
         this.filters = new com.ksc.internal.SdkInternalList<Filter>(filters);
     }
+
     public  List<Filter> getFilters() {
         return filters;
     }
+
     public void setMaxResults(String maxResults) {
         this.maxResults = maxResults;
     }
+
     public String getMaxResults() {
         return maxResults;
     }
+
     public void setNextToken(String nextToken) {
         this.nextToken = nextToken;
     }
+
     public String getNextToken() {
         return nextToken;
     }
+
 
     @Override
     public Request<DescribeInspectionsRequest> getDryRunRequest() {
@@ -92,6 +100,10 @@ public class DescribeInspectionsRequest extends KscWebServiceRequest implements
     @Override
     public DescribeInspectionsRequest clone() {
         return (DescribeInspectionsRequest) super.clone();
+    }
+
+    public String toString() {
+        return "DescribeInspectionsRequest(filters=" + this.getFilters() + ",MaxResults=" + this.getMaxResults() + ",NextToken=" + this.getNextToken() + ")";
     }
 }
 

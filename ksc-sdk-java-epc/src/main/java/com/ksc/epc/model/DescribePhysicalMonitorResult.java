@@ -50,9 +50,11 @@ public class DescribePhysicalMonitorResult implements Serializable, Cloneable {
     public void setRequestId(String RequestId) {
         this.RequestId = RequestId;
     }
+
     public String getRequestId() {
         return RequestId;
     }
+
     public void addCPUInfo(Item... items) {
 		if (this.CPUInfo == null) {
 			this.CPUInfo = new SdkInternalList<Item>();
@@ -65,9 +67,11 @@ public class DescribePhysicalMonitorResult implements Serializable, Cloneable {
     public void setCPUInfo(List<Item> items) {
         this.CPUInfo = new SdkInternalList<Item>(items);
     }
+
     public  List<Item> getCPUInfo() {
         return CPUInfo;
     }
+
     public void addMemoryInfo(Item... items) {
 		if (this.MemoryInfo == null) {
 			this.MemoryInfo = new SdkInternalList<Item>();
@@ -80,9 +84,11 @@ public class DescribePhysicalMonitorResult implements Serializable, Cloneable {
     public void setMemoryInfo(List<Item> items) {
         this.MemoryInfo = new SdkInternalList<Item>(items);
     }
+
     public  List<Item> getMemoryInfo() {
         return MemoryInfo;
     }
+
     public void addDiskInfo(Item... items) {
 		if (this.DiskInfo == null) {
 			this.DiskInfo = new SdkInternalList<Item>();
@@ -95,9 +101,11 @@ public class DescribePhysicalMonitorResult implements Serializable, Cloneable {
     public void setDiskInfo(List<Item> items) {
         this.DiskInfo = new SdkInternalList<Item>(items);
     }
+
     public  List<Item> getDiskInfo() {
         return DiskInfo;
     }
+
     public void addFanInfo(Item... items) {
 		if (this.FanInfo == null) {
 			this.FanInfo = new SdkInternalList<Item>();
@@ -110,9 +118,11 @@ public class DescribePhysicalMonitorResult implements Serializable, Cloneable {
     public void setFanInfo(List<Item> items) {
         this.FanInfo = new SdkInternalList<Item>(items);
     }
+
     public  List<Item> getFanInfo() {
         return FanInfo;
     }
+
     public void addPowerInfo(Item... items) {
 		if (this.PowerInfo == null) {
 			this.PowerInfo = new SdkInternalList<Item>();
@@ -125,9 +135,11 @@ public class DescribePhysicalMonitorResult implements Serializable, Cloneable {
     public void setPowerInfo(List<Item> items) {
         this.PowerInfo = new SdkInternalList<Item>(items);
     }
+
     public  List<Item> getPowerInfo() {
         return PowerInfo;
     }
+
 
     @Override
     public DescribePhysicalMonitorResult clone() {
@@ -138,5 +150,9 @@ public class DescribePhysicalMonitorResult implements Serializable, Cloneable {
                     "Got a CloneNotSupportedException from Object.clone() "
                             + "even though we're Cloneable!", e);
         }
+    }
+
+    public String toString() {
+        return "DescribePhysicalMonitorResult(RequestId=" + this.getRequestId() + ",CPUInfo=" + this.getCPUInfo() + ",MemoryInfo=" + this.getMemoryInfo() + ",DiskInfo=" + this.getDiskInfo() + ",FanInfo=" + this.getFanInfo() + ",PowerInfo=" + this.getPowerInfo() + ")";
     }
 }

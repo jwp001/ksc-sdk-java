@@ -5,6 +5,7 @@ import com.ksc.Request;
 import com.ksc.model.DryRunSupportedRequest;
 import com.ksc.epc.model.transform.DescribeEpcStocksRequestMarshaller;
 import com.ksc.model.Filter;
+import java.util.List;
 
 import java.io.Serializable;
 
@@ -48,12 +49,15 @@ public class DescribeEpcStocksRequest extends KscWebServiceRequest implements
 			this.filters.add(filter);
 		}
 	}
+
     public void setFilters(List<Filter> filters) {
         this.filters = new com.ksc.internal.SdkInternalList<Filter>(filters);
     }
+
     public  List<Filter> getFilters() {
         return filters;
     }
+
 
     @Override
     public Request<DescribeEpcStocksRequest> getDryRunRequest() {
@@ -66,6 +70,10 @@ public class DescribeEpcStocksRequest extends KscWebServiceRequest implements
     @Override
     public DescribeEpcStocksRequest clone() {
         return (DescribeEpcStocksRequest) super.clone();
+    }
+
+    public String toString() {
+        return "DescribeEpcStocksRequest(filters=" + this.getFilters() + ")";
     }
 }
 

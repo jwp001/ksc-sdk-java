@@ -23,26 +23,37 @@ public class Cpu {
     public void setModel(String model) {
         this.model = model;
     }
+
     public String getModel() {
         return model;
     }
+
     public void setFrequence(String frequence) {
         this.frequence = frequence;
     }
+
     public String getFrequence() {
         return frequence;
     }
+
     public void setCount(Integer count) {
         this.count = count;
     }
+
     public Integer getCount() {
         return count;
     }
+
     public void setCoreCount(Integer coreCount) {
         this.coreCount = coreCount;
     }
+
     public Integer getCoreCount() {
         return coreCount;
+    }
+
+    public String toString() {
+        return "Cpu(Model=" + this.getModel() + ",Frequence=" + this.getFrequence() + ",Count=" + this.getCount() + ",CoreCount=" + this.getCoreCount() + ")";
     }
 
 }

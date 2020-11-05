@@ -56,12 +56,15 @@ public class DescribeResourceRequirementsRequest extends KscWebServiceRequest im
 			this.filters.add(filter);
 		}
 	}
+
     public void setFilters(List<Filter> filters) {
         this.filters = new com.ksc.internal.SdkInternalList<Filter>(filters);
     }
+
     public  List<Filter> getFilters() {
         return filters;
     }
+
     public void addResourceRequirementIds(String... resourceRequirementIds){
         if (this.resourceRequirementIds == null) {
             this.resourceRequirementIds = new com.ksc.internal.SdkInternalList<String>();
@@ -70,12 +73,15 @@ public class DescribeResourceRequirementsRequest extends KscWebServiceRequest im
             this.resourceRequirementIds.add(value);
         }
     }
+
     public void setResourceRequirementIds(List<String> resourceRequirementIds) {
         this.resourceRequirementIds = new com.ksc.internal.SdkInternalList<String>(resourceRequirementIds);
     }
+
     public  List<String> getResourceRequirementIds() {
         return resourceRequirementIds;
     }
+
 
     @Override
     public Request<DescribeResourceRequirementsRequest> getDryRunRequest() {
@@ -88,6 +94,10 @@ public class DescribeResourceRequirementsRequest extends KscWebServiceRequest im
     @Override
     public DescribeResourceRequirementsRequest clone() {
         return (DescribeResourceRequirementsRequest) super.clone();
+    }
+
+    public String toString() {
+        return "DescribeResourceRequirementsRequest(filters=" + this.getFilters() + ",ResourceRequirementIds=" + this.getResourceRequirementIds() + ")";
     }
 }
 

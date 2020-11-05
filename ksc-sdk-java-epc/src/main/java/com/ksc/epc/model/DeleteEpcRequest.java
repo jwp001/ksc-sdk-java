@@ -42,9 +42,11 @@ public class DeleteEpcRequest extends KscWebServiceRequest implements
     public void setHostId(String hostId) {
         this.hostId = hostId;
     }
+
     public String getHostId() {
         return hostId;
     }
+
 
     @Override
     public Request<DeleteEpcRequest> getDryRunRequest() {
@@ -57,6 +59,10 @@ public class DeleteEpcRequest extends KscWebServiceRequest implements
     @Override
     public DeleteEpcRequest clone() {
         return (DeleteEpcRequest) super.clone();
+    }
+
+    public String toString() {
+        return "DeleteEpcRequest(HostId=" + this.getHostId() + ")";
     }
 }
 

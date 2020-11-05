@@ -36,15 +36,19 @@ public class ImportKeyResult implements Serializable, Cloneable {
     public void setRequestId(String RequestId) {
         this.RequestId = RequestId;
     }
+
     public String getRequestId() {
         return RequestId;
     }
+
     public void setKey(Key Key) {
         this.Key = Key;
     }
+
     public Key getKey() {
         return Key;
     }
+
 
     @Override
     public ImportKeyResult clone() {
@@ -55,5 +59,9 @@ public class ImportKeyResult implements Serializable, Cloneable {
                     "Got a CloneNotSupportedException from Object.clone() "
                             + "even though we're Cloneable!", e);
         }
+    }
+
+    public String toString() {
+        return "ImportKeyResult(RequestId=" + this.getRequestId() + ",Key=" + this.getKey() + ")";
     }
 }

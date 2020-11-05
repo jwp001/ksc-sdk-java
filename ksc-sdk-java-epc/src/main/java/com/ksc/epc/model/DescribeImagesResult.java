@@ -44,9 +44,11 @@ public class DescribeImagesResult implements Serializable, Cloneable {
     public void setRequestId(String RequestId) {
         this.RequestId = RequestId;
     }
+
     public String getRequestId() {
         return RequestId;
     }
+
     public void addImageSet(Image... images) {
 		if (this.ImageSet == null) {
 			this.ImageSet = new SdkInternalList<Image>();
@@ -59,21 +61,27 @@ public class DescribeImagesResult implements Serializable, Cloneable {
     public void setImageSet(List<Image> images) {
         this.ImageSet = new SdkInternalList<Image>(images);
     }
+
     public  List<Image> getImageSet() {
         return ImageSet;
     }
+
     public void setTotalCount(Integer TotalCount) {
         this.TotalCount = TotalCount;
     }
+
     public Integer getTotalCount() {
         return TotalCount;
     }
+
     public void setNextToken(String NextToken) {
         this.NextToken = NextToken;
     }
+
     public String getNextToken() {
         return NextToken;
     }
+
 
     @Override
     public DescribeImagesResult clone() {
@@ -84,5 +92,9 @@ public class DescribeImagesResult implements Serializable, Cloneable {
                     "Got a CloneNotSupportedException from Object.clone() "
                             + "even though we're Cloneable!", e);
         }
+    }
+
+    public String toString() {
+        return "DescribeImagesResult(RequestId=" + this.getRequestId() + ",ImageSet=" + this.getImageSet() + ",TotalCount=" + this.getTotalCount() + ",NextToken=" + this.getNextToken() + ")";
     }
 }

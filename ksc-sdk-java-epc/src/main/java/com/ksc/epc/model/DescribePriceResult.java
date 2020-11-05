@@ -36,15 +36,19 @@ public class DescribePriceResult implements Serializable, Cloneable {
     public void setRequestId(String RequestId) {
         this.RequestId = RequestId;
     }
+
     public String getRequestId() {
         return RequestId;
     }
+
     public void setPriceInfo(PriceInfo PriceInfo) {
         this.PriceInfo = PriceInfo;
     }
+
     public PriceInfo getPriceInfo() {
         return PriceInfo;
     }
+
 
     @Override
     public DescribePriceResult clone() {
@@ -55,5 +59,9 @@ public class DescribePriceResult implements Serializable, Cloneable {
                     "Got a CloneNotSupportedException from Object.clone() "
                             + "even though we're Cloneable!", e);
         }
+    }
+
+    public String toString() {
+        return "DescribePriceResult(RequestId=" + this.getRequestId() + ",PriceInfo=" + this.getPriceInfo() + ")";
     }
 }

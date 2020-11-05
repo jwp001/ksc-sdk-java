@@ -51,68 +51,93 @@ public class ResourceRequirement {
     public void setResourceRequirementId(String resourceRequirementId) {
         this.resourceRequirementId = resourceRequirementId;
     }
+
     public String getResourceRequirementId() {
         return resourceRequirementId;
     }
+
     public void setHostType(String hostType) {
         this.hostType = hostType;
     }
+
     public String getHostType() {
         return hostType;
     }
+
     public void setRegion(String region) {
         this.region = region;
     }
+
     public String getRegion() {
         return region;
     }
+
     public void setAvailabilityZone(String availabilityZone) {
         this.availabilityZone = availabilityZone;
     }
+
     public String getAvailabilityZone() {
         return availabilityZone;
     }
+
     public void setRequirementCount(Integer requirementCount) {
         this.requirementCount = requirementCount;
     }
+
     public Integer getRequirementCount() {
         return requirementCount;
     }
+
     public void setReserveCount(Integer reserveCount) {
         this.reserveCount = reserveCount;
     }
+
     public Integer getReserveCount() {
         return reserveCount;
     }
+
     public void setProjectName(String projectName) {
         this.projectName = projectName;
     }
+
     public String getProjectName() {
         return projectName;
     }
+
     public void setUsageDate(String usageDate) {
         this.usageDate = usageDate;
     }
+
     public String getUsageDate() {
         return usageDate;
     }
+
     public void setDescription(String description) {
         this.description = description;
     }
+
     public String getDescription() {
         return description;
     }
+
     public void setCreateTime(String createTime) {
         this.createTime = createTime;
     }
+
     public String getCreateTime() {
         return createTime;
     }
+
     public void setProgress(String progress) {
         this.progress = progress;
     }
+
     public String getProgress() {
         return progress;
+    }
+
+    public String toString() {
+        return "ResourceRequirement(ResourceRequirementId=" + this.getResourceRequirementId() + ",HostType=" + this.getHostType() + ",Region=" + this.getRegion() + ",AvailabilityZone=" + this.getAvailabilityZone() + ",RequirementCount=" + this.getRequirementCount() + ",ReserveCount=" + this.getReserveCount() + ",ProjectName=" + this.getProjectName() + ",UsageDate=" + this.getUsageDate() + ",Description=" + this.getDescription() + ",CreateTime=" + this.getCreateTime() + ",Progress=" + this.getProgress() + ")";
     }
 
 }

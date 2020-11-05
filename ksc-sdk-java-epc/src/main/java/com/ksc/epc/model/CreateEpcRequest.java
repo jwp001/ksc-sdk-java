@@ -309,45 +309,59 @@ public class CreateEpcRequest extends KscWebServiceRequest implements
     public void setHostType(String hostType) {
         this.hostType = hostType;
     }
+
     public String getHostType() {
         return hostType;
     }
+
     public void setAvailabilityZone(String availabilityZone) {
         this.availabilityZone = availabilityZone;
     }
+
     public String getAvailabilityZone() {
         return availabilityZone;
     }
+
     public void setRaid(String raid) {
         this.raid = raid;
     }
+
     public String getRaid() {
         return raid;
     }
+
     public void setImageId(String imageId) {
         this.imageId = imageId;
     }
+
     public String getImageId() {
         return imageId;
     }
+
     public void setNetworkInterfaceMode(String networkInterfaceMode) {
         this.networkInterfaceMode = networkInterfaceMode;
     }
+
     public String getNetworkInterfaceMode() {
         return networkInterfaceMode;
     }
+
     public void setSubnetId(String subnetId) {
         this.subnetId = subnetId;
     }
+
     public String getSubnetId() {
         return subnetId;
     }
+
     public void setPrivateIpAddress(String privateIpAddress) {
         this.privateIpAddress = privateIpAddress;
     }
+
     public String getPrivateIpAddress() {
         return privateIpAddress;
     }
+
     public void addSecurityGroupIds(String... securityGroupIds){
         if (this.securityGroupIds == null) {
             this.securityGroupIds = new com.ksc.internal.SdkInternalList<String>();
@@ -356,78 +370,103 @@ public class CreateEpcRequest extends KscWebServiceRequest implements
             this.securityGroupIds.add(value);
         }
     }
+
     public void setSecurityGroupIds(List<String> securityGroupIds) {
         this.securityGroupIds = new com.ksc.internal.SdkInternalList<String>(securityGroupIds);
     }
+
     public  List<String> getSecurityGroupIds() {
         return securityGroupIds;
     }
+
     public void setDNS1(String dNS1) {
         this.dNS1 = dNS1;
     }
+
     public String getDNS1() {
         return dNS1;
     }
+
     public void setDNS2(String dNS2) {
         this.dNS2 = dNS2;
     }
+
     public String getDNS2() {
         return dNS2;
     }
+
     public void setKeyId(String keyId) {
         this.keyId = keyId;
     }
+
     public String getKeyId() {
         return keyId;
     }
+
     public void setHostName(String hostName) {
         this.hostName = hostName;
     }
+
     public String getHostName() {
         return hostName;
     }
+
     public void setChargeType(String chargeType) {
         this.chargeType = chargeType;
     }
+
     public String getChargeType() {
         return chargeType;
     }
+
     public void setPurchaseTime(Integer purchaseTime) {
         this.purchaseTime = purchaseTime;
     }
+
     public Integer getPurchaseTime() {
         return purchaseTime;
     }
+
     public void setPassword(String password) {
         this.password = password;
     }
+
     public String getPassword() {
         return password;
     }
+
     public void setSecurityAgent(String securityAgent) {
         this.securityAgent = securityAgent;
     }
+
     public String getSecurityAgent() {
         return securityAgent;
     }
+
     public void setCloudMonitorAgent(String cloudMonitorAgent) {
         this.cloudMonitorAgent = cloudMonitorAgent;
     }
+
     public String getCloudMonitorAgent() {
         return cloudMonitorAgent;
     }
+
     public void setExtensionSubnetId(String extensionSubnetId) {
         this.extensionSubnetId = extensionSubnetId;
     }
+
     public String getExtensionSubnetId() {
         return extensionSubnetId;
     }
+
     public void setExtensionPrivateIpAddress(String extensionPrivateIpAddress) {
         this.extensionPrivateIpAddress = extensionPrivateIpAddress;
     }
+
     public String getExtensionPrivateIpAddress() {
         return extensionPrivateIpAddress;
     }
+
     public void addExtensionSecurityGroupIds(String... extensionSecurityGroupIds){
         if (this.extensionSecurityGroupIds == null) {
             this.extensionSecurityGroupIds = new com.ksc.internal.SdkInternalList<String>();
@@ -436,126 +475,167 @@ public class CreateEpcRequest extends KscWebServiceRequest implements
             this.extensionSecurityGroupIds.add(value);
         }
     }
+
     public void setExtensionSecurityGroupIds(List<String> extensionSecurityGroupIds) {
         this.extensionSecurityGroupIds = new com.ksc.internal.SdkInternalList<String>(extensionSecurityGroupIds);
     }
+
     public  List<String> getExtensionSecurityGroupIds() {
         return extensionSecurityGroupIds;
     }
+
     public void setExtensionDNS1(String extensionDNS1) {
         this.extensionDNS1 = extensionDNS1;
     }
+
     public String getExtensionDNS1() {
         return extensionDNS1;
     }
+
     public void setExtensionDNS2(String extensionDNS2) {
         this.extensionDNS2 = extensionDNS2;
     }
+
     public String getExtensionDNS2() {
         return extensionDNS2;
     }
+
     public void setProjectId(String projectId) {
         this.projectId = projectId;
     }
+
     public String getProjectId() {
         return projectId;
     }
+
     public void setAddressBandWidth(Integer addressBandWidth) {
         this.addressBandWidth = addressBandWidth;
     }
+
     public Integer getAddressBandWidth() {
         return addressBandWidth;
     }
+
     public void setLineId(String lineId) {
         this.lineId = lineId;
     }
+
     public String getLineId() {
         return lineId;
     }
+
     public void setAddressChargeType(String addressChargeType) {
         this.addressChargeType = addressChargeType;
     }
+
     public String getAddressChargeType() {
         return addressChargeType;
     }
+
     public void setAddressPurchaseTime(Integer addressPurchaseTime) {
         this.addressPurchaseTime = addressPurchaseTime;
     }
+
     public Integer getAddressPurchaseTime() {
         return addressPurchaseTime;
     }
+
     public void setAddressProjectId(String addressProjectId) {
         this.addressProjectId = addressProjectId;
     }
+
     public String getAddressProjectId() {
         return addressProjectId;
     }
+
     public void setSystemFileType(String systemFileType) {
         this.systemFileType = systemFileType;
     }
+
     public String getSystemFileType() {
         return systemFileType;
     }
+
     public void setDataFileType(String dataFileType) {
         this.dataFileType = dataFileType;
     }
+
     public String getDataFileType() {
         return dataFileType;
     }
+
     public void setDataDiskCatalogue(String dataDiskCatalogue) {
         this.dataDiskCatalogue = dataDiskCatalogue;
     }
+
     public String getDataDiskCatalogue() {
         return dataDiskCatalogue;
     }
+
     public void setDataDiskCatalogueSuffix(String dataDiskCatalogueSuffix) {
         this.dataDiskCatalogueSuffix = dataDiskCatalogueSuffix;
     }
+
     public String getDataDiskCatalogueSuffix() {
         return dataDiskCatalogueSuffix;
     }
+
     public void setHyperThreading(String hyperThreading) {
         this.hyperThreading = hyperThreading;
     }
+
     public String getHyperThreading() {
         return hyperThreading;
     }
+
     public void setNvmeDataFileType(String nvmeDataFileType) {
         this.nvmeDataFileType = nvmeDataFileType;
     }
+
     public String getNvmeDataFileType() {
         return nvmeDataFileType;
     }
+
     public void setNvmeDataDiskCatalogue(String nvmeDataDiskCatalogue) {
         this.nvmeDataDiskCatalogue = nvmeDataDiskCatalogue;
     }
+
     public String getNvmeDataDiskCatalogue() {
         return nvmeDataDiskCatalogue;
     }
+
     public void setNvmeDataDiskCatalogueSuffix(String nvmeDataDiskCatalogueSuffix) {
         this.nvmeDataDiskCatalogueSuffix = nvmeDataDiskCatalogueSuffix;
     }
+
     public String getNvmeDataDiskCatalogueSuffix() {
         return nvmeDataDiskCatalogueSuffix;
     }
+
     public void setBondAttribute(String bondAttribute) {
         this.bondAttribute = bondAttribute;
     }
+
     public String getBondAttribute() {
         return bondAttribute;
     }
+
     public void setContainerAgent(String containerAgent) {
         this.containerAgent = containerAgent;
     }
+
     public String getContainerAgent() {
         return containerAgent;
     }
+
     public void setKesAgent(String kesAgent) {
         this.kesAgent = kesAgent;
     }
+
     public String getKesAgent() {
         return kesAgent;
     }
+
 
     @Override
     public Request<CreateEpcRequest> getDryRunRequest() {
@@ -568,6 +648,10 @@ public class CreateEpcRequest extends KscWebServiceRequest implements
     @Override
     public CreateEpcRequest clone() {
         return (CreateEpcRequest) super.clone();
+    }
+
+    public String toString() {
+        return "CreateEpcRequest(HostType=" + this.getHostType() + ",AvailabilityZone=" + this.getAvailabilityZone() + ",Raid=" + this.getRaid() + ",ImageId=" + this.getImageId() + ",NetworkInterfaceMode=" + this.getNetworkInterfaceMode() + ",SubnetId=" + this.getSubnetId() + ",PrivateIpAddress=" + this.getPrivateIpAddress() + ",SecurityGroupIds=" + this.getSecurityGroupIds() + ",DNS1=" + this.getDNS1() + ",DNS2=" + this.getDNS2() + ",KeyId=" + this.getKeyId() + ",HostName=" + this.getHostName() + ",ChargeType=" + this.getChargeType() + ",PurchaseTime=" + this.getPurchaseTime() + ",Password=" + this.getPassword() + ",SecurityAgent=" + this.getSecurityAgent() + ",CloudMonitorAgent=" + this.getCloudMonitorAgent() + ",ExtensionSubnetId=" + this.getExtensionSubnetId() + ",ExtensionPrivateIpAddress=" + this.getExtensionPrivateIpAddress() + ",ExtensionSecurityGroupIds=" + this.getExtensionSecurityGroupIds() + ",ExtensionDNS1=" + this.getExtensionDNS1() + ",ExtensionDNS2=" + this.getExtensionDNS2() + ",ProjectId=" + this.getProjectId() + ",AddressBandWidth=" + this.getAddressBandWidth() + ",LineId=" + this.getLineId() + ",AddressChargeType=" + this.getAddressChargeType() + ",AddressPurchaseTime=" + this.getAddressPurchaseTime() + ",AddressProjectId=" + this.getAddressProjectId() + ",SystemFileType=" + this.getSystemFileType() + ",DataFileType=" + this.getDataFileType() + ",DataDiskCatalogue=" + this.getDataDiskCatalogue() + ",DataDiskCatalogueSuffix=" + this.getDataDiskCatalogueSuffix() + ",HyperThreading=" + this.getHyperThreading() + ",NvmeDataFileType=" + this.getNvmeDataFileType() + ",NvmeDataDiskCatalogue=" + this.getNvmeDataDiskCatalogue() + ",NvmeDataDiskCatalogueSuffix=" + this.getNvmeDataDiskCatalogueSuffix() + ",BondAttribute=" + this.getBondAttribute() + ",ContainerAgent=" + this.getContainerAgent() + ",KesAgent=" + this.getKesAgent() + ")";
     }
 }
 

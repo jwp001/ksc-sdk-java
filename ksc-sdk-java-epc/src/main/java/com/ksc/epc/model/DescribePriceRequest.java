@@ -70,33 +70,43 @@ public class DescribePriceRequest extends KscWebServiceRequest implements
     public void setAvailabilityZone(String availabilityZone) {
         this.availabilityZone = availabilityZone;
     }
+
     public String getAvailabilityZone() {
         return availabilityZone;
     }
+
     public void setHostType(String hostType) {
         this.hostType = hostType;
     }
+
     public String getHostType() {
         return hostType;
     }
+
     public void setChargeType(String chargeType) {
         this.chargeType = chargeType;
     }
+
     public String getChargeType() {
         return chargeType;
     }
+
     public void setPurchaseTime(String purchaseTime) {
         this.purchaseTime = purchaseTime;
     }
+
     public String getPurchaseTime() {
         return purchaseTime;
     }
+
     public void setAmount(Integer amount) {
         this.amount = amount;
     }
+
     public Integer getAmount() {
         return amount;
     }
+
 
     @Override
     public Request<DescribePriceRequest> getDryRunRequest() {
@@ -109,6 +119,10 @@ public class DescribePriceRequest extends KscWebServiceRequest implements
     @Override
     public DescribePriceRequest clone() {
         return (DescribePriceRequest) super.clone();
+    }
+
+    public String toString() {
+        return "DescribePriceRequest(AvailabilityZone=" + this.getAvailabilityZone() + ",HostType=" + this.getHostType() + ",ChargeType=" + this.getChargeType() + ",PurchaseTime=" + this.getPurchaseTime() + ",Amount=" + this.getAmount() + ")";
     }
 }
 

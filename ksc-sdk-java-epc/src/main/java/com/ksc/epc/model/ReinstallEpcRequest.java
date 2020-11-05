@@ -175,123 +175,163 @@ public class ReinstallEpcRequest extends KscWebServiceRequest implements
     public void setHostId(String hostId) {
         this.hostId = hostId;
     }
+
     public String getHostId() {
         return hostId;
     }
+
     public void setImageId(String imageId) {
         this.imageId = imageId;
     }
+
     public String getImageId() {
         return imageId;
     }
+
     public void setKeyId(String keyId) {
         this.keyId = keyId;
     }
+
     public String getKeyId() {
         return keyId;
     }
+
     public void setPassword(String password) {
         this.password = password;
     }
+
     public String getPassword() {
         return password;
     }
+
     public void setNetworkInterfaceMode(String networkInterfaceMode) {
         this.networkInterfaceMode = networkInterfaceMode;
     }
+
     public String getNetworkInterfaceMode() {
         return networkInterfaceMode;
     }
+
     public void setSecurityAgent(String securityAgent) {
         this.securityAgent = securityAgent;
     }
+
     public String getSecurityAgent() {
         return securityAgent;
     }
+
     public void setCloudMonitorAgent(String cloudMonitorAgent) {
         this.cloudMonitorAgent = cloudMonitorAgent;
     }
+
     public String getCloudMonitorAgent() {
         return cloudMonitorAgent;
     }
+
     public void setRaid(String raid) {
         this.raid = raid;
     }
+
     public String getRaid() {
         return raid;
     }
+
     public void setHostName(String hostName) {
         this.hostName = hostName;
     }
+
     public String getHostName() {
         return hostName;
     }
+
     public void setSystemFileType(String systemFileType) {
         this.systemFileType = systemFileType;
     }
+
     public String getSystemFileType() {
         return systemFileType;
     }
+
     public void setDataFileType(String dataFileType) {
         this.dataFileType = dataFileType;
     }
+
     public String getDataFileType() {
         return dataFileType;
     }
+
     public void setDataDiskCatalogue(String dataDiskCatalogue) {
         this.dataDiskCatalogue = dataDiskCatalogue;
     }
+
     public String getDataDiskCatalogue() {
         return dataDiskCatalogue;
     }
+
     public void setDataDiskCatalogueSuffix(String dataDiskCatalogueSuffix) {
         this.dataDiskCatalogueSuffix = dataDiskCatalogueSuffix;
     }
+
     public String getDataDiskCatalogueSuffix() {
         return dataDiskCatalogueSuffix;
     }
+
     public void setHyperThreading(String hyperThreading) {
         this.hyperThreading = hyperThreading;
     }
+
     public String getHyperThreading() {
         return hyperThreading;
     }
+
     public void setNvmeDataFileType(String nvmeDataFileType) {
         this.nvmeDataFileType = nvmeDataFileType;
     }
+
     public String getNvmeDataFileType() {
         return nvmeDataFileType;
     }
+
     public void setNvmeDataDiskCatalogue(String nvmeDataDiskCatalogue) {
         this.nvmeDataDiskCatalogue = nvmeDataDiskCatalogue;
     }
+
     public String getNvmeDataDiskCatalogue() {
         return nvmeDataDiskCatalogue;
     }
+
     public void setNvmeDataDiskCatalogueSuffix(String nvmeDataDiskCatalogueSuffix) {
         this.nvmeDataDiskCatalogueSuffix = nvmeDataDiskCatalogueSuffix;
     }
+
     public String getNvmeDataDiskCatalogueSuffix() {
         return nvmeDataDiskCatalogueSuffix;
     }
+
     public void setBondAttribute(String bondAttribute) {
         this.bondAttribute = bondAttribute;
     }
+
     public String getBondAttribute() {
         return bondAttribute;
     }
+
     public void setContainerAgent(String containerAgent) {
         this.containerAgent = containerAgent;
     }
+
     public String getContainerAgent() {
         return containerAgent;
     }
+
     public void setKesAgent(String kesAgent) {
         this.kesAgent = kesAgent;
     }
+
     public String getKesAgent() {
         return kesAgent;
     }
+
 
     @Override
     public Request<ReinstallEpcRequest> getDryRunRequest() {
@@ -304,6 +344,10 @@ public class ReinstallEpcRequest extends KscWebServiceRequest implements
     @Override
     public ReinstallEpcRequest clone() {
         return (ReinstallEpcRequest) super.clone();
+    }
+
+    public String toString() {
+        return "ReinstallEpcRequest(HostId=" + this.getHostId() + ",ImageId=" + this.getImageId() + ",KeyId=" + this.getKeyId() + ",Password=" + this.getPassword() + ",NetworkInterfaceMode=" + this.getNetworkInterfaceMode() + ",SecurityAgent=" + this.getSecurityAgent() + ",CloudMonitorAgent=" + this.getCloudMonitorAgent() + ",Raid=" + this.getRaid() + ",HostName=" + this.getHostName() + ",SystemFileType=" + this.getSystemFileType() + ",DataFileType=" + this.getDataFileType() + ",DataDiskCatalogue=" + this.getDataDiskCatalogue() + ",DataDiskCatalogueSuffix=" + this.getDataDiskCatalogueSuffix() + ",HyperThreading=" + this.getHyperThreading() + ",NvmeDataFileType=" + this.getNvmeDataFileType() + ",NvmeDataDiskCatalogue=" + this.getNvmeDataDiskCatalogue() + ",NvmeDataDiskCatalogueSuffix=" + this.getNvmeDataDiskCatalogueSuffix() + ",BondAttribute=" + this.getBondAttribute() + ",ContainerAgent=" + this.getContainerAgent() + ",KesAgent=" + this.getKesAgent() + ")";
     }
 }
 

@@ -57,9 +57,11 @@ public class ModifySecurityGroupRequest extends KscWebServiceRequest implements
     public void setNetworkInterfaceId(String networkInterfaceId) {
         this.networkInterfaceId = networkInterfaceId;
     }
+
     public String getNetworkInterfaceId() {
         return networkInterfaceId;
     }
+
     public void addSecurityGroupIds(String... securityGroupIds){
         if (this.securityGroupIds == null) {
             this.securityGroupIds = new com.ksc.internal.SdkInternalList<String>();
@@ -68,18 +70,23 @@ public class ModifySecurityGroupRequest extends KscWebServiceRequest implements
             this.securityGroupIds.add(value);
         }
     }
+
     public void setSecurityGroupIds(List<String> securityGroupIds) {
         this.securityGroupIds = new com.ksc.internal.SdkInternalList<String>(securityGroupIds);
     }
+
     public  List<String> getSecurityGroupIds() {
         return securityGroupIds;
     }
+
     public void setHostId(String hostId) {
         this.hostId = hostId;
     }
+
     public String getHostId() {
         return hostId;
     }
+
 
     @Override
     public Request<ModifySecurityGroupRequest> getDryRunRequest() {
@@ -92,6 +99,10 @@ public class ModifySecurityGroupRequest extends KscWebServiceRequest implements
     @Override
     public ModifySecurityGroupRequest clone() {
         return (ModifySecurityGroupRequest) super.clone();
+    }
+
+    public String toString() {
+        return "ModifySecurityGroupRequest(NetworkInterfaceId=" + this.getNetworkInterfaceId() + ",SecurityGroupIds=" + this.getSecurityGroupIds() + ",HostId=" + this.getHostId() + ")";
     }
 }
 

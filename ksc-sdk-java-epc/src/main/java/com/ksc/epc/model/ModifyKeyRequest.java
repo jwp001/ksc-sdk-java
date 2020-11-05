@@ -49,15 +49,19 @@ public class ModifyKeyRequest extends KscWebServiceRequest implements
     public void setKeyId(String keyId) {
         this.keyId = keyId;
     }
+
     public String getKeyId() {
         return keyId;
     }
+
     public void setKeyName(String keyName) {
         this.keyName = keyName;
     }
+
     public String getKeyName() {
         return keyName;
     }
+
 
     @Override
     public Request<ModifyKeyRequest> getDryRunRequest() {
@@ -70,6 +74,10 @@ public class ModifyKeyRequest extends KscWebServiceRequest implements
     @Override
     public ModifyKeyRequest clone() {
         return (ModifyKeyRequest) super.clone();
+    }
+
+    public String toString() {
+        return "ModifyKeyRequest(KeyId=" + this.getKeyId() + ",KeyName=" + this.getKeyName() + ")";
     }
 }
 

@@ -42,9 +42,11 @@ public class DeleteAccessoryRequest extends KscWebServiceRequest implements
     public void setAccessoryId(String accessoryId) {
         this.accessoryId = accessoryId;
     }
+
     public String getAccessoryId() {
         return accessoryId;
     }
+
 
     @Override
     public Request<DeleteAccessoryRequest> getDryRunRequest() {
@@ -57,6 +59,10 @@ public class DeleteAccessoryRequest extends KscWebServiceRequest implements
     @Override
     public DeleteAccessoryRequest clone() {
         return (DeleteAccessoryRequest) super.clone();
+    }
+
+    public String toString() {
+        return "DeleteAccessoryRequest(AccessoryId=" + this.getAccessoryId() + ")";
     }
 }
 

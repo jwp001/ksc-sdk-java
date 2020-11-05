@@ -42,9 +42,11 @@ public class DeleteProcessRequest extends KscWebServiceRequest implements
     public void setOperationProcessId(String operationProcessId) {
         this.operationProcessId = operationProcessId;
     }
+
     public String getOperationProcessId() {
         return operationProcessId;
     }
+
 
     @Override
     public Request<DeleteProcessRequest> getDryRunRequest() {
@@ -57,6 +59,10 @@ public class DeleteProcessRequest extends KscWebServiceRequest implements
     @Override
     public DeleteProcessRequest clone() {
         return (DeleteProcessRequest) super.clone();
+    }
+
+    public String toString() {
+        return "DeleteProcessRequest(OperationProcessId=" + this.getOperationProcessId() + ")";
     }
 }
 

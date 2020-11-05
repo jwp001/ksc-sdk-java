@@ -11,8 +11,13 @@ public class CpuDevice {
     public void setCpuSpec(String cpuSpec) {
         this.cpuSpec = cpuSpec;
     }
+
     public String getCpuSpec() {
         return cpuSpec;
+    }
+
+    public String toString() {
+        return "CpuDevice(CpuSpec=" + this.getCpuSpec() + ")";
     }
 
 }

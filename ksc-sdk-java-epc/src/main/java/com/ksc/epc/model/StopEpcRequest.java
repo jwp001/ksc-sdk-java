@@ -42,9 +42,11 @@ public class StopEpcRequest extends KscWebServiceRequest implements
     public void setHostId(String hostId) {
         this.hostId = hostId;
     }
+
     public String getHostId() {
         return hostId;
     }
+
 
     @Override
     public Request<StopEpcRequest> getDryRunRequest() {
@@ -57,6 +59,10 @@ public class StopEpcRequest extends KscWebServiceRequest implements
     @Override
     public StopEpcRequest clone() {
         return (StopEpcRequest) super.clone();
+    }
+
+    public String toString() {
+        return "StopEpcRequest(HostId=" + this.getHostId() + ")";
     }
 }
 

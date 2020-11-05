@@ -36,15 +36,19 @@ public class CreateImageResult implements Serializable, Cloneable {
     public void setRequestId(String RequestId) {
         this.RequestId = RequestId;
     }
+
     public String getRequestId() {
         return RequestId;
     }
+
     public void setImage(Image Image) {
         this.Image = Image;
     }
+
     public Image getImage() {
         return Image;
     }
+
 
     @Override
     public CreateImageResult clone() {
@@ -55,5 +59,9 @@ public class CreateImageResult implements Serializable, Cloneable {
                     "Got a CloneNotSupportedException from Object.clone() "
                             + "even though we're Cloneable!", e);
         }
+    }
+
+    public String toString() {
+        return "CreateImageResult(RequestId=" + this.getRequestId() + ",Image=" + this.getImage() + ")";
     }
 }

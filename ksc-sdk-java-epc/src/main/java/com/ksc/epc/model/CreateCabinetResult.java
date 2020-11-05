@@ -36,15 +36,19 @@ public class CreateCabinetResult implements Serializable, Cloneable {
     public void setRequestId(String RequestId) {
         this.RequestId = RequestId;
     }
+
     public String getRequestId() {
         return RequestId;
     }
+
     public void setCabinetId(String CabinetId) {
         this.CabinetId = CabinetId;
     }
+
     public String getCabinetId() {
         return CabinetId;
     }
+
 
     @Override
     public CreateCabinetResult clone() {
@@ -55,5 +59,9 @@ public class CreateCabinetResult implements Serializable, Cloneable {
                     "Got a CloneNotSupportedException from Object.clone() "
                             + "even though we're Cloneable!", e);
         }
+    }
+
+    public String toString() {
+        return "CreateCabinetResult(RequestId=" + this.getRequestId() + ",CabinetId=" + this.getCabinetId() + ")";
     }
 }

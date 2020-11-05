@@ -36,15 +36,19 @@ public class BuyAccessoryResult implements Serializable, Cloneable {
     public void setRequestId(String RequestId) {
         this.RequestId = RequestId;
     }
+
     public String getRequestId() {
         return RequestId;
     }
+
     public void setAccessory(Accessory Accessory) {
         this.Accessory = Accessory;
     }
+
     public Accessory getAccessory() {
         return Accessory;
     }
+
 
     @Override
     public BuyAccessoryResult clone() {
@@ -55,5 +59,9 @@ public class BuyAccessoryResult implements Serializable, Cloneable {
                     "Got a CloneNotSupportedException from Object.clone() "
                             + "even though we're Cloneable!", e);
         }
+    }
+
+    public String toString() {
+        return "BuyAccessoryResult(RequestId=" + this.getRequestId() + ",Accessory=" + this.getAccessory() + ")";
     }
 }

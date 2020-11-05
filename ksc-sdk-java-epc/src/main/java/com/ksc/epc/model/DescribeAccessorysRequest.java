@@ -70,12 +70,15 @@ public class DescribeAccessorysRequest extends KscWebServiceRequest implements
 			this.filters.add(filter);
 		}
 	}
+
     public void setFilters(List<Filter> filters) {
         this.filters = new com.ksc.internal.SdkInternalList<Filter>(filters);
     }
+
     public  List<Filter> getFilters() {
         return filters;
     }
+
     public void addAccessoryIds(String... accessoryIds){
         if (this.accessoryIds == null) {
             this.accessoryIds = new com.ksc.internal.SdkInternalList<String>();
@@ -84,24 +87,31 @@ public class DescribeAccessorysRequest extends KscWebServiceRequest implements
             this.accessoryIds.add(value);
         }
     }
+
     public void setAccessoryIds(List<String> accessoryIds) {
         this.accessoryIds = new com.ksc.internal.SdkInternalList<String>(accessoryIds);
     }
+
     public  List<String> getAccessoryIds() {
         return accessoryIds;
     }
+
     public void setMaxResults(String maxResults) {
         this.maxResults = maxResults;
     }
+
     public String getMaxResults() {
         return maxResults;
     }
+
     public void setNextToken(String nextToken) {
         this.nextToken = nextToken;
     }
+
     public String getNextToken() {
         return nextToken;
     }
+
 
     @Override
     public Request<DescribeAccessorysRequest> getDryRunRequest() {
@@ -114,6 +124,10 @@ public class DescribeAccessorysRequest extends KscWebServiceRequest implements
     @Override
     public DescribeAccessorysRequest clone() {
         return (DescribeAccessorysRequest) super.clone();
+    }
+
+    public String toString() {
+        return "DescribeAccessorysRequest(filters=" + this.getFilters() + ",AccessoryIds=" + this.getAccessoryIds() + ",MaxResults=" + this.getMaxResults() + ",NextToken=" + this.getNextToken() + ")";
     }
 }
 

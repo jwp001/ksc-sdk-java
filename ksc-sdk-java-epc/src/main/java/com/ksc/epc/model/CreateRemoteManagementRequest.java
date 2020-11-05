@@ -56,21 +56,27 @@ public class CreateRemoteManagementRequest extends KscWebServiceRequest implemen
     public void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
     }
+
     public String getPhoneNumber() {
         return phoneNumber;
     }
+
     public void setPin(String pin) {
         this.pin = pin;
     }
+
     public String getPin() {
         return pin;
     }
+
     public void setName(String name) {
         this.name = name;
     }
+
     public String getName() {
         return name;
     }
+
 
     @Override
     public Request<CreateRemoteManagementRequest> getDryRunRequest() {
@@ -83,6 +89,10 @@ public class CreateRemoteManagementRequest extends KscWebServiceRequest implemen
     @Override
     public CreateRemoteManagementRequest clone() {
         return (CreateRemoteManagementRequest) super.clone();
+    }
+
+    public String toString() {
+        return "CreateRemoteManagementRequest(PhoneNumber=" + this.getPhoneNumber() + ",Pin=" + this.getPin() + ",Name=" + this.getName() + ")";
     }
 }
 

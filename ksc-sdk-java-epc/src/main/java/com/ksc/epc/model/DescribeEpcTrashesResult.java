@@ -44,9 +44,11 @@ public class DescribeEpcTrashesResult implements Serializable, Cloneable {
     public void setRequestId(String RequestId) {
         this.RequestId = RequestId;
     }
+
     public String getRequestId() {
         return RequestId;
     }
+
     public void addHostSet(Host... hosts) {
 		if (this.HostSet == null) {
 			this.HostSet = new SdkInternalList<Host>();
@@ -59,21 +61,27 @@ public class DescribeEpcTrashesResult implements Serializable, Cloneable {
     public void setHostSet(List<Host> hosts) {
         this.HostSet = new SdkInternalList<Host>(hosts);
     }
+
     public  List<Host> getHostSet() {
         return HostSet;
     }
+
     public void setTotalCount(Integer TotalCount) {
         this.TotalCount = TotalCount;
     }
+
     public Integer getTotalCount() {
         return TotalCount;
     }
+
     public void setNextToken(String NextToken) {
         this.NextToken = NextToken;
     }
+
     public String getNextToken() {
         return NextToken;
     }
+
 
     @Override
     public DescribeEpcTrashesResult clone() {
@@ -84,5 +92,9 @@ public class DescribeEpcTrashesResult implements Serializable, Cloneable {
                     "Got a CloneNotSupportedException from Object.clone() "
                             + "even though we're Cloneable!", e);
         }
+    }
+
+    public String toString() {
+        return "DescribeEpcTrashesResult(RequestId=" + this.getRequestId() + ",HostSet=" + this.getHostSet() + ",TotalCount=" + this.getTotalCount() + ",NextToken=" + this.getNextToken() + ")";
     }
 }

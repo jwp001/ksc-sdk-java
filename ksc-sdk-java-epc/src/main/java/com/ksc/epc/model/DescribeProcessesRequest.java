@@ -70,12 +70,15 @@ public class DescribeProcessesRequest extends KscWebServiceRequest implements
 			this.filters.add(filter);
 		}
 	}
+
     public void setFilters(List<Filter> filters) {
         this.filters = new com.ksc.internal.SdkInternalList<Filter>(filters);
     }
+
     public  List<Filter> getFilters() {
         return filters;
     }
+
     public void addOperationProcessIds(String... operationProcessIds){
         if (this.operationProcessIds == null) {
             this.operationProcessIds = new com.ksc.internal.SdkInternalList<String>();
@@ -84,24 +87,31 @@ public class DescribeProcessesRequest extends KscWebServiceRequest implements
             this.operationProcessIds.add(value);
         }
     }
+
     public void setOperationProcessIds(List<String> operationProcessIds) {
         this.operationProcessIds = new com.ksc.internal.SdkInternalList<String>(operationProcessIds);
     }
+
     public  List<String> getOperationProcessIds() {
         return operationProcessIds;
     }
+
     public void setMaxResults(String maxResults) {
         this.maxResults = maxResults;
     }
+
     public String getMaxResults() {
         return maxResults;
     }
+
     public void setNextToken(String nextToken) {
         this.nextToken = nextToken;
     }
+
     public String getNextToken() {
         return nextToken;
     }
+
 
     @Override
     public Request<DescribeProcessesRequest> getDryRunRequest() {
@@ -114,6 +124,10 @@ public class DescribeProcessesRequest extends KscWebServiceRequest implements
     @Override
     public DescribeProcessesRequest clone() {
         return (DescribeProcessesRequest) super.clone();
+    }
+
+    public String toString() {
+        return "DescribeProcessesRequest(filters=" + this.getFilters() + ",OperationProcessIds=" + this.getOperationProcessIds() + ",MaxResults=" + this.getMaxResults() + ",NextToken=" + this.getNextToken() + ")";
     }
 }
 

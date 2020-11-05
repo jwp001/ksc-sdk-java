@@ -76,36 +76,47 @@ public class ModifyNetworkInterfaceAttributeRequest extends KscWebServiceRequest
             this.securityGroupIds.add(value);
         }
     }
+
     public void setSecurityGroupIds(List<String> securityGroupIds) {
         this.securityGroupIds = new com.ksc.internal.SdkInternalList<String>(securityGroupIds);
     }
+
     public  List<String> getSecurityGroupIds() {
         return securityGroupIds;
     }
+
     public void setNetworkInterfaceId(String networkInterfaceId) {
         this.networkInterfaceId = networkInterfaceId;
     }
+
     public String getNetworkInterfaceId() {
         return networkInterfaceId;
     }
+
     public void setSubnetId(String subnetId) {
         this.subnetId = subnetId;
     }
+
     public String getSubnetId() {
         return subnetId;
     }
+
     public void setIpAddress(String ipAddress) {
         this.ipAddress = ipAddress;
     }
+
     public String getIpAddress() {
         return ipAddress;
     }
+
     public void setHostId(String hostId) {
         this.hostId = hostId;
     }
+
     public String getHostId() {
         return hostId;
     }
+
 
     @Override
     public Request<ModifyNetworkInterfaceAttributeRequest> getDryRunRequest() {
@@ -118,6 +129,10 @@ public class ModifyNetworkInterfaceAttributeRequest extends KscWebServiceRequest
     @Override
     public ModifyNetworkInterfaceAttributeRequest clone() {
         return (ModifyNetworkInterfaceAttributeRequest) super.clone();
+    }
+
+    public String toString() {
+        return "ModifyNetworkInterfaceAttributeRequest(SecurityGroupIds=" + this.getSecurityGroupIds() + ",NetworkInterfaceId=" + this.getNetworkInterfaceId() + ",SubnetId=" + this.getSubnetId() + ",IpAddress=" + this.getIpAddress() + ",HostId=" + this.getHostId() + ")";
     }
 }
 

@@ -10,7 +10,7 @@ import static com.fasterxml.jackson.core.JsonToken.END_OBJECT;
 import static com.fasterxml.jackson.core.JsonToken.FIELD_NAME;
 import static com.fasterxml.jackson.core.JsonToken.START_OBJECT;
 import static com.fasterxml.jackson.core.JsonToken.VALUE_NULL;
-        import com.ksc.epc.model.CommunicationContent;
+import com.ksc.epc.model.CommunicationContent;
 
 public class ProcessJsonUnmarshaller implements Unmarshaller<Process, JsonUnmarshallerContext> {
     private static ProcessJsonUnmarshaller instance;

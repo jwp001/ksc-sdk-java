@@ -77,39 +77,51 @@ public class CreateResourceRequirementRequest extends KscWebServiceRequest imple
     public void setAvailabilityZone(String availabilityZone) {
         this.availabilityZone = availabilityZone;
     }
+
     public String getAvailabilityZone() {
         return availabilityZone;
     }
+
     public void setRequirementCount(Integer requirementCount) {
         this.requirementCount = requirementCount;
     }
+
     public Integer getRequirementCount() {
         return requirementCount;
     }
+
     public void setProjectName(String projectName) {
         this.projectName = projectName;
     }
+
     public String getProjectName() {
         return projectName;
     }
+
     public void setUsageDate(String usageDate) {
         this.usageDate = usageDate;
     }
+
     public String getUsageDate() {
         return usageDate;
     }
+
     public void setDescription(String description) {
         this.description = description;
     }
+
     public String getDescription() {
         return description;
     }
+
     public void setHostType(String hostType) {
         this.hostType = hostType;
     }
+
     public String getHostType() {
         return hostType;
     }
+
 
     @Override
     public Request<CreateResourceRequirementRequest> getDryRunRequest() {
@@ -122,6 +134,10 @@ public class CreateResourceRequirementRequest extends KscWebServiceRequest imple
     @Override
     public CreateResourceRequirementRequest clone() {
         return (CreateResourceRequirementRequest) super.clone();
+    }
+
+    public String toString() {
+        return "CreateResourceRequirementRequest(AvailabilityZone=" + this.getAvailabilityZone() + ",RequirementCount=" + this.getRequirementCount() + ",ProjectName=" + this.getProjectName() + ",UsageDate=" + this.getUsageDate() + ",Description=" + this.getDescription() + ",HostType=" + this.getHostType() + ")";
     }
 }
 

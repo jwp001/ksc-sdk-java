@@ -84,12 +84,15 @@ public class DescribeEpcManagementsRequest extends KscWebServiceRequest implemen
 			this.filters.add(filter);
 		}
 	}
+
     public void setFilters(List<Filter> filters) {
         this.filters = new com.ksc.internal.SdkInternalList<Filter>(filters);
     }
+
     public  List<Filter> getFilters() {
         return filters;
     }
+
     public void addEpcManagementIds(String... epcManagementIds){
         if (this.epcManagementIds == null) {
             this.epcManagementIds = new com.ksc.internal.SdkInternalList<String>();
@@ -98,36 +101,47 @@ public class DescribeEpcManagementsRequest extends KscWebServiceRequest implemen
             this.epcManagementIds.add(value);
         }
     }
+
     public void setEpcManagementIds(List<String> epcManagementIds) {
         this.epcManagementIds = new com.ksc.internal.SdkInternalList<String>(epcManagementIds);
     }
+
     public  List<String> getEpcManagementIds() {
         return epcManagementIds;
     }
+
     public void setDynamicCode(String dynamicCode) {
         this.dynamicCode = dynamicCode;
     }
+
     public String getDynamicCode() {
         return dynamicCode;
     }
+
     public void setPin(String pin) {
         this.pin = pin;
     }
+
     public String getPin() {
         return pin;
     }
+
     public void setMaxResults(String maxResults) {
         this.maxResults = maxResults;
     }
+
     public String getMaxResults() {
         return maxResults;
     }
+
     public void setNextToken(String nextToken) {
         this.nextToken = nextToken;
     }
+
     public String getNextToken() {
         return nextToken;
     }
+
 
     @Override
     public Request<DescribeEpcManagementsRequest> getDryRunRequest() {
@@ -140,6 +154,10 @@ public class DescribeEpcManagementsRequest extends KscWebServiceRequest implemen
     @Override
     public DescribeEpcManagementsRequest clone() {
         return (DescribeEpcManagementsRequest) super.clone();
+    }
+
+    public String toString() {
+        return "DescribeEpcManagementsRequest(filters=" + this.getFilters() + ",EpcManagementIds=" + this.getEpcManagementIds() + ",DynamicCode=" + this.getDynamicCode() + ",Pin=" + this.getPin() + ",MaxResults=" + this.getMaxResults() + ",NextToken=" + this.getNextToken() + ")";
     }
 }
 

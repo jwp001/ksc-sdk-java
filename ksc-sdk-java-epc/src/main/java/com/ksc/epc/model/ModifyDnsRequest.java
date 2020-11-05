@@ -63,27 +63,35 @@ public class ModifyDnsRequest extends KscWebServiceRequest implements
     public void setNetworkInterfaceId(String networkInterfaceId) {
         this.networkInterfaceId = networkInterfaceId;
     }
+
     public String getNetworkInterfaceId() {
         return networkInterfaceId;
     }
+
     public void setDNS1(String dNS1) {
         this.dNS1 = dNS1;
     }
+
     public String getDNS1() {
         return dNS1;
     }
+
     public void setDNS2(String dNS2) {
         this.dNS2 = dNS2;
     }
+
     public String getDNS2() {
         return dNS2;
     }
+
     public void setHostId(String hostId) {
         this.hostId = hostId;
     }
+
     public String getHostId() {
         return hostId;
     }
+
 
     @Override
     public Request<ModifyDnsRequest> getDryRunRequest() {
@@ -96,6 +104,10 @@ public class ModifyDnsRequest extends KscWebServiceRequest implements
     @Override
     public ModifyDnsRequest clone() {
         return (ModifyDnsRequest) super.clone();
+    }
+
+    public String toString() {
+        return "ModifyDnsRequest(NetworkInterfaceId=" + this.getNetworkInterfaceId() + ",DNS1=" + this.getDNS1() + ",DNS2=" + this.getDNS2() + ",HostId=" + this.getHostId() + ")";
     }
 }
 

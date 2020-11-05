@@ -70,33 +70,43 @@ public class CreateCabinetRequest extends KscWebServiceRequest implements
     public void setChargeType(String chargeType) {
         this.chargeType = chargeType;
     }
+
     public String getChargeType() {
         return chargeType;
     }
+
     public void setAvailabilityZone(String availabilityZone) {
         this.availabilityZone = availabilityZone;
     }
+
     public String getAvailabilityZone() {
         return availabilityZone;
     }
+
     public void setPurchaseTime(Integer purchaseTime) {
         this.purchaseTime = purchaseTime;
     }
+
     public Integer getPurchaseTime() {
         return purchaseTime;
     }
+
     public void setCabinetType(String cabinetType) {
         this.cabinetType = cabinetType;
     }
+
     public String getCabinetType() {
         return cabinetType;
     }
+
     public void setProjectId(String projectId) {
         this.projectId = projectId;
     }
+
     public String getProjectId() {
         return projectId;
     }
+
 
     @Override
     public Request<CreateCabinetRequest> getDryRunRequest() {
@@ -109,6 +119,10 @@ public class CreateCabinetRequest extends KscWebServiceRequest implements
     @Override
     public CreateCabinetRequest clone() {
         return (CreateCabinetRequest) super.clone();
+    }
+
+    public String toString() {
+        return "CreateCabinetRequest(ChargeType=" + this.getChargeType() + ",AvailabilityZone=" + this.getAvailabilityZone() + ",PurchaseTime=" + this.getPurchaseTime() + ",CabinetType=" + this.getCabinetType() + ",ProjectId=" + this.getProjectId() + ")";
     }
 }
 

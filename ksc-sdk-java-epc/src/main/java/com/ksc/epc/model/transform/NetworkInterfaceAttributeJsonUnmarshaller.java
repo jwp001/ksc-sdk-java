@@ -10,7 +10,7 @@ import static com.fasterxml.jackson.core.JsonToken.END_OBJECT;
 import static com.fasterxml.jackson.core.JsonToken.FIELD_NAME;
 import static com.fasterxml.jackson.core.JsonToken.START_OBJECT;
 import static com.fasterxml.jackson.core.JsonToken.VALUE_NULL;
-        import com.ksc.epc.model.SecurityGroup;
+import com.ksc.epc.model.SecurityGroup;
 
 public class NetworkInterfaceAttributeJsonUnmarshaller implements Unmarshaller<NetworkInterfaceAttribute, JsonUnmarshallerContext> {
     private static NetworkInterfaceAttributeJsonUnmarshaller instance;

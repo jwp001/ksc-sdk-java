@@ -42,9 +42,11 @@ public class DeleteImageRequest extends KscWebServiceRequest implements
     public void setImageId(String imageId) {
         this.imageId = imageId;
     }
+
     public String getImageId() {
         return imageId;
     }
+
 
     @Override
     public Request<DeleteImageRequest> getDryRunRequest() {
@@ -57,6 +59,10 @@ public class DeleteImageRequest extends KscWebServiceRequest implements
     @Override
     public DeleteImageRequest clone() {
         return (DeleteImageRequest) super.clone();
+    }
+
+    public String toString() {
+        return "DeleteImageRequest(ImageId=" + this.getImageId() + ")";
     }
 }
 

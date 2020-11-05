@@ -31,38 +31,53 @@ public class Disk {
     public void setDiskType(String diskType) {
         this.diskType = diskType;
     }
+
     public String getDiskType() {
         return diskType;
     }
+
     public void setSystemDiskSpace(String systemDiskSpace) {
         this.systemDiskSpace = systemDiskSpace;
     }
+
     public String getSystemDiskSpace() {
         return systemDiskSpace;
     }
+
     public void setRaid(String raid) {
         this.raid = raid;
     }
+
     public String getRaid() {
         return raid;
     }
+
     public void setDiskAttribute(String diskAttribute) {
         this.diskAttribute = diskAttribute;
     }
+
     public String getDiskAttribute() {
         return diskAttribute;
     }
+
     public void setDiskCount(String diskCount) {
         this.diskCount = diskCount;
     }
+
     public String getDiskCount() {
         return diskCount;
     }
+
     public void setSpace(String space) {
         this.space = space;
     }
+
     public String getSpace() {
         return space;
+    }
+
+    public String toString() {
+        return "Disk(DiskType=" + this.getDiskType() + ",SystemDiskSpace=" + this.getSystemDiskSpace() + ",Raid=" + this.getRaid() + ",DiskAttribute=" + this.getDiskAttribute() + ",DiskCount=" + this.getDiskCount() + ",Space=" + this.getSpace() + ")";
     }
 
 }

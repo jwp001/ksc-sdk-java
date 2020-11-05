@@ -39,21 +39,27 @@ public class DescribeVpnsResult implements Serializable, Cloneable {
     public void setRequestId(String RequestId) {
         this.RequestId = RequestId;
     }
+
     public String getRequestId() {
         return RequestId;
     }
+
     public void setUserName(String UserName) {
         this.UserName = UserName;
     }
+
     public String getUserName() {
         return UserName;
     }
+
     public void setPassword(String Password) {
         this.Password = Password;
     }
+
     public String getPassword() {
         return Password;
     }
+
 
     @Override
     public DescribeVpnsResult clone() {
@@ -64,5 +70,9 @@ public class DescribeVpnsResult implements Serializable, Cloneable {
                     "Got a CloneNotSupportedException from Object.clone() "
                             + "even though we're Cloneable!", e);
         }
+    }
+
+    public String toString() {
+        return "DescribeVpnsResult(RequestId=" + this.getRequestId() + ",UserName=" + this.getUserName() + ",Password=" + this.getPassword() + ")";
     }
 }

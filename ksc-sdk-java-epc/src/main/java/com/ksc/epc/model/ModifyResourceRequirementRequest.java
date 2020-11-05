@@ -56,21 +56,27 @@ public class ModifyResourceRequirementRequest extends KscWebServiceRequest imple
     public void setResourceRequirementId(String resourceRequirementId) {
         this.resourceRequirementId = resourceRequirementId;
     }
+
     public String getResourceRequirementId() {
         return resourceRequirementId;
     }
+
     public void setProjectName(String projectName) {
         this.projectName = projectName;
     }
+
     public String getProjectName() {
         return projectName;
     }
+
     public void setDescription(String description) {
         this.description = description;
     }
+
     public String getDescription() {
         return description;
     }
+
 
     @Override
     public Request<ModifyResourceRequirementRequest> getDryRunRequest() {
@@ -83,6 +89,10 @@ public class ModifyResourceRequirementRequest extends KscWebServiceRequest imple
     @Override
     public ModifyResourceRequirementRequest clone() {
         return (ModifyResourceRequirementRequest) super.clone();
+    }
+
+    public String toString() {
+        return "ModifyResourceRequirementRequest(ResourceRequirementId=" + this.getResourceRequirementId() + ",ProjectName=" + this.getProjectName() + ",Description=" + this.getDescription() + ")";
     }
 }
 

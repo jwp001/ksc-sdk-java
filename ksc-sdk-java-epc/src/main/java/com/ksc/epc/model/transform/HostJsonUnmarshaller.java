@@ -10,8 +10,8 @@ import static com.fasterxml.jackson.core.JsonToken.END_OBJECT;
 import static com.fasterxml.jackson.core.JsonToken.FIELD_NAME;
 import static com.fasterxml.jackson.core.JsonToken.START_OBJECT;
 import static com.fasterxml.jackson.core.JsonToken.VALUE_NULL;
-        import com.ksc.epc.model.Disk;
-        import com.ksc.epc.model.NetworkInterfaceAttribute;
+import com.ksc.epc.model.Disk;
+import com.ksc.epc.model.NetworkInterfaceAttribute;
 
 public class HostJsonUnmarshaller implements Unmarshaller<Host, JsonUnmarshallerContext> {
     private static HostJsonUnmarshaller instance;

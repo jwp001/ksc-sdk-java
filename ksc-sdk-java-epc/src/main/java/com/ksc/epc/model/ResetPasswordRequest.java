@@ -49,15 +49,19 @@ public class ResetPasswordRequest extends KscWebServiceRequest implements
     public void setPassword(String password) {
         this.password = password;
     }
+
     public String getPassword() {
         return password;
     }
+
     public void setHostId(String hostId) {
         this.hostId = hostId;
     }
+
     public String getHostId() {
         return hostId;
     }
+
 
     @Override
     public Request<ResetPasswordRequest> getDryRunRequest() {
@@ -70,6 +74,10 @@ public class ResetPasswordRequest extends KscWebServiceRequest implements
     @Override
     public ResetPasswordRequest clone() {
         return (ResetPasswordRequest) super.clone();
+    }
+
+    public String toString() {
+        return "ResetPasswordRequest(Password=" + this.getPassword() + ",HostId=" + this.getHostId() + ")";
     }
 }
 

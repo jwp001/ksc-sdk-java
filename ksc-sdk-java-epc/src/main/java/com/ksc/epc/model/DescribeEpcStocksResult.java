@@ -38,9 +38,11 @@ public class DescribeEpcStocksResult implements Serializable, Cloneable {
     public void setRequestId(String RequestId) {
         this.RequestId = RequestId;
     }
+
     public String getRequestId() {
         return RequestId;
     }
+
     public void addEpcStockSet(Stock... stocks) {
 		if (this.EpcStockSet == null) {
 			this.EpcStockSet = new SdkInternalList<Stock>();
@@ -53,9 +55,11 @@ public class DescribeEpcStocksResult implements Serializable, Cloneable {
     public void setEpcStockSet(List<Stock> stocks) {
         this.EpcStockSet = new SdkInternalList<Stock>(stocks);
     }
+
     public  List<Stock> getEpcStockSet() {
         return EpcStockSet;
     }
+
 
     @Override
     public DescribeEpcStocksResult clone() {
@@ -66,5 +70,9 @@ public class DescribeEpcStocksResult implements Serializable, Cloneable {
                     "Got a CloneNotSupportedException from Object.clone() "
                             + "even though we're Cloneable!", e);
         }
+    }
+
+    public String toString() {
+        return "DescribeEpcStocksResult(RequestId=" + this.getRequestId() + ",EpcStockSet=" + this.getEpcStockSet() + ")";
     }
 }

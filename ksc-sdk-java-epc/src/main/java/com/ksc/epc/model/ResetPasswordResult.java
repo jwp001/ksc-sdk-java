@@ -36,15 +36,19 @@ public class ResetPasswordResult implements Serializable, Cloneable {
     public void setRequestId(String RequestId) {
         this.RequestId = RequestId;
     }
+
     public String getRequestId() {
         return RequestId;
     }
+
     public void setReturn(Boolean Return) {
         this.Return = Return;
     }
+
     public Boolean getReturn() {
         return Return;
     }
+
 
     @Override
     public ResetPasswordResult clone() {
@@ -55,5 +59,9 @@ public class ResetPasswordResult implements Serializable, Cloneable {
                     "Got a CloneNotSupportedException from Object.clone() "
                             + "even though we're Cloneable!", e);
         }
+    }
+
+    public String toString() {
+        return "ResetPasswordResult(RequestId=" + this.getRequestId() + ",Return=" + this.getReturn() + ")";
     }
 }

@@ -10,7 +10,7 @@ import static com.fasterxml.jackson.core.JsonToken.END_OBJECT;
 import static com.fasterxml.jackson.core.JsonToken.FIELD_NAME;
 import static com.fasterxml.jackson.core.JsonToken.START_OBJECT;
 import static com.fasterxml.jackson.core.JsonToken.VALUE_NULL;
-        import com.ksc.epc.model.Price;
+import com.ksc.epc.model.Price;
 
 public class PriceInfoJsonUnmarshaller implements Unmarshaller<PriceInfo, JsonUnmarshallerContext> {
     private static PriceInfoJsonUnmarshaller instance;

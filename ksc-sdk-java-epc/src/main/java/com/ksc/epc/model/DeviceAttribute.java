@@ -1,7 +1,7 @@
 package com.ksc.epc.model;
 
 import java.util.List;
-
+        
 public class DeviceAttribute {
 
     /**
@@ -44,33 +44,43 @@ public class DeviceAttribute {
     public void setDeviceAttributeId(String deviceAttributeId) {
         this.deviceAttributeId = deviceAttributeId;
     }
+
     public String getDeviceAttributeId() {
         return deviceAttributeId;
     }
+
     public void setHostType(String hostType) {
         this.hostType = hostType;
     }
+
     public String getHostType() {
         return hostType;
     }
+
     public void setHostTypeName(String hostTypeName) {
         this.hostTypeName = hostTypeName;
     }
+
     public String getHostTypeName() {
         return hostTypeName;
     }
+
     public void setMemory(String memory) {
         this.memory = memory;
     }
+
     public String getMemory() {
         return memory;
     }
+
     public void setNetworkCard(String networkCard) {
         this.networkCard = networkCard;
     }
+
     public String getNetworkCard() {
         return networkCard;
     }
+
     public void addCpuDeviceSet(CpuDevice... cpuDeviceSet) {
         if (this.cpuDeviceSet == null) {
             this.cpuDeviceSet = new com.ksc.internal.SdkInternalList<CpuDevice>();
@@ -79,12 +89,15 @@ public class DeviceAttribute {
             this.cpuDeviceSet.add(value);
         }
     }
+
     public void setCpuDeviceSet(List<CpuDevice> cpuDeviceSet) {
         this.cpuDeviceSet = new com.ksc.internal.SdkInternalList<CpuDevice>(cpuDeviceSet);
     }
+
     public  List<CpuDevice> getCpuDeviceSet() {
         return cpuDeviceSet;
     }
+
     public void addGpuDeviceSet(GpuDevice... gpuDeviceSet) {
         if (this.gpuDeviceSet == null) {
             this.gpuDeviceSet = new com.ksc.internal.SdkInternalList<GpuDevice>();
@@ -93,12 +106,15 @@ public class DeviceAttribute {
             this.gpuDeviceSet.add(value);
         }
     }
+
     public void setGpuDeviceSet(List<GpuDevice> gpuDeviceSet) {
         this.gpuDeviceSet = new com.ksc.internal.SdkInternalList<GpuDevice>(gpuDeviceSet);
     }
+
     public  List<GpuDevice> getGpuDeviceSet() {
         return gpuDeviceSet;
     }
+
     public void addPhysicalDiskDeviceSet(PhysicalDiskDevice... physicalDiskDeviceSet) {
         if (this.physicalDiskDeviceSet == null) {
             this.physicalDiskDeviceSet = new com.ksc.internal.SdkInternalList<PhysicalDiskDevice>();
@@ -107,12 +123,15 @@ public class DeviceAttribute {
             this.physicalDiskDeviceSet.add(value);
         }
     }
+
     public void setPhysicalDiskDeviceSet(List<PhysicalDiskDevice> physicalDiskDeviceSet) {
         this.physicalDiskDeviceSet = new com.ksc.internal.SdkInternalList<PhysicalDiskDevice>(physicalDiskDeviceSet);
     }
+
     public  List<PhysicalDiskDevice> getPhysicalDiskDeviceSet() {
         return physicalDiskDeviceSet;
     }
+
     public void addPriceSet(MonthlyPrice... priceSet) {
         if (this.priceSet == null) {
             this.priceSet = new com.ksc.internal.SdkInternalList<MonthlyPrice>();
@@ -121,11 +140,17 @@ public class DeviceAttribute {
             this.priceSet.add(value);
         }
     }
+
     public void setPriceSet(List<MonthlyPrice> priceSet) {
         this.priceSet = new com.ksc.internal.SdkInternalList<MonthlyPrice>(priceSet);
     }
+
     public  List<MonthlyPrice> getPriceSet() {
         return priceSet;
+    }
+
+    public String toString() {
+        return "DeviceAttribute(DeviceAttributeId=" + this.getDeviceAttributeId() + ",HostType=" + this.getHostType() + ",HostTypeName=" + this.getHostTypeName() + ",Memory=" + this.getMemory() + ",NetworkCard=" + this.getNetworkCard() + ",CpuDeviceSet=" + this.getCpuDeviceSet() + ",GpuDeviceSet=" + this.getGpuDeviceSet() + ",PhysicalDiskDeviceSet=" + this.getPhysicalDiskDeviceSet() + ",PriceSet=" + this.getPriceSet() + ")";
     }
 
 }

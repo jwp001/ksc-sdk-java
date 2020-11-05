@@ -56,12 +56,15 @@ public class DescribeRemoteManagementsRequest extends KscWebServiceRequest imple
 			this.filters.add(filter);
 		}
 	}
+
     public void setFilters(List<Filter> filters) {
         this.filters = new com.ksc.internal.SdkInternalList<Filter>(filters);
     }
+
     public  List<Filter> getFilters() {
         return filters;
     }
+
     public void addRemoteManagementIds(String... remoteManagementIds){
         if (this.remoteManagementIds == null) {
             this.remoteManagementIds = new com.ksc.internal.SdkInternalList<String>();
@@ -70,12 +73,15 @@ public class DescribeRemoteManagementsRequest extends KscWebServiceRequest imple
             this.remoteManagementIds.add(value);
         }
     }
+
     public void setRemoteManagementIds(List<String> remoteManagementIds) {
         this.remoteManagementIds = new com.ksc.internal.SdkInternalList<String>(remoteManagementIds);
     }
+
     public  List<String> getRemoteManagementIds() {
         return remoteManagementIds;
     }
+
 
     @Override
     public Request<DescribeRemoteManagementsRequest> getDryRunRequest() {
@@ -88,6 +94,10 @@ public class DescribeRemoteManagementsRequest extends KscWebServiceRequest imple
     @Override
     public DescribeRemoteManagementsRequest clone() {
         return (DescribeRemoteManagementsRequest) super.clone();
+    }
+
+    public String toString() {
+        return "DescribeRemoteManagementsRequest(filters=" + this.getFilters() + ",RemoteManagementIds=" + this.getRemoteManagementIds() + ")";
     }
 }
 

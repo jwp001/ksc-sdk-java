@@ -49,15 +49,19 @@ public class ImportKeyRequest extends KscWebServiceRequest implements
     public void setKeyName(String keyName) {
         this.keyName = keyName;
     }
+
     public String getKeyName() {
         return keyName;
     }
+
     public void setPublicKey(String publicKey) {
         this.publicKey = publicKey;
     }
+
     public String getPublicKey() {
         return publicKey;
     }
+
 
     @Override
     public Request<ImportKeyRequest> getDryRunRequest() {
@@ -70,6 +74,10 @@ public class ImportKeyRequest extends KscWebServiceRequest implements
     @Override
     public ImportKeyRequest clone() {
         return (ImportKeyRequest) super.clone();
+    }
+
+    public String toString() {
+        return "ImportKeyRequest(KeyName=" + this.getKeyName() + ",PublicKey=" + this.getPublicKey() + ")";
     }
 }
 

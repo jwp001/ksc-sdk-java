@@ -56,21 +56,27 @@ public class ReinstallCustomerEpcRequest extends KscWebServiceRequest implements
     public void setHostId(String hostId) {
         this.hostId = hostId;
     }
+
     public String getHostId() {
         return hostId;
     }
+
     public void setServerIp(String serverIp) {
         this.serverIp = serverIp;
     }
+
     public String getServerIp() {
         return serverIp;
     }
+
     public void setPath(String path) {
         this.path = path;
     }
+
     public String getPath() {
         return path;
     }
+
 
     @Override
     public Request<ReinstallCustomerEpcRequest> getDryRunRequest() {
@@ -83,6 +89,10 @@ public class ReinstallCustomerEpcRequest extends KscWebServiceRequest implements
     @Override
     public ReinstallCustomerEpcRequest clone() {
         return (ReinstallCustomerEpcRequest) super.clone();
+    }
+
+    public String toString() {
+        return "ReinstallCustomerEpcRequest(HostId=" + this.getHostId() + ",ServerIp=" + this.getServerIp() + ",Path=" + this.getPath() + ")";
     }
 }
 

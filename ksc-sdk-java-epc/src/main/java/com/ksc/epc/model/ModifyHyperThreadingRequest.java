@@ -49,15 +49,19 @@ public class ModifyHyperThreadingRequest extends KscWebServiceRequest implements
     public void setHyperThreadingStatus(String hyperThreadingStatus) {
         this.hyperThreadingStatus = hyperThreadingStatus;
     }
+
     public String getHyperThreadingStatus() {
         return hyperThreadingStatus;
     }
+
     public void setHostId(String hostId) {
         this.hostId = hostId;
     }
+
     public String getHostId() {
         return hostId;
     }
+
 
     @Override
     public Request<ModifyHyperThreadingRequest> getDryRunRequest() {
@@ -70,6 +74,10 @@ public class ModifyHyperThreadingRequest extends KscWebServiceRequest implements
     @Override
     public ModifyHyperThreadingRequest clone() {
         return (ModifyHyperThreadingRequest) super.clone();
+    }
+
+    public String toString() {
+        return "ModifyHyperThreadingRequest(HyperThreadingStatus=" + this.getHyperThreadingStatus() + ",HostId=" + this.getHostId() + ")";
     }
 }
 

@@ -77,39 +77,51 @@ public class ModifyRemoteManagementRequest extends KscWebServiceRequest implemen
     public void setRemoteManagementId(String remoteManagementId) {
         this.remoteManagementId = remoteManagementId;
     }
+
     public String getRemoteManagementId() {
         return remoteManagementId;
     }
+
     public void setDynamicCode(String dynamicCode) {
         this.dynamicCode = dynamicCode;
     }
+
     public String getDynamicCode() {
         return dynamicCode;
     }
+
     public void setNewPhoneNumber(String newPhoneNumber) {
         this.newPhoneNumber = newPhoneNumber;
     }
+
     public String getNewPhoneNumber() {
         return newPhoneNumber;
     }
+
     public void setPin(String pin) {
         this.pin = pin;
     }
+
     public String getPin() {
         return pin;
     }
+
     public void setNewPin(String newPin) {
         this.newPin = newPin;
     }
+
     public String getNewPin() {
         return newPin;
     }
+
     public void setName(String name) {
         this.name = name;
     }
+
     public String getName() {
         return name;
     }
+
 
     @Override
     public Request<ModifyRemoteManagementRequest> getDryRunRequest() {
@@ -122,6 +134,10 @@ public class ModifyRemoteManagementRequest extends KscWebServiceRequest implemen
     @Override
     public ModifyRemoteManagementRequest clone() {
         return (ModifyRemoteManagementRequest) super.clone();
+    }
+
+    public String toString() {
+        return "ModifyRemoteManagementRequest(RemoteManagementId=" + this.getRemoteManagementId() + ",DynamicCode=" + this.getDynamicCode() + ",NewPhoneNumber=" + this.getNewPhoneNumber() + ",Pin=" + this.getPin() + ",NewPin=" + this.getNewPin() + ",Name=" + this.getName() + ")";
     }
 }
 

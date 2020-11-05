@@ -42,9 +42,11 @@ public class DeleteResourceRequirementRequest extends KscWebServiceRequest imple
     public void setResourceRequirementId(String resourceRequirementId) {
         this.resourceRequirementId = resourceRequirementId;
     }
+
     public String getResourceRequirementId() {
         return resourceRequirementId;
     }
+
 
     @Override
     public Request<DeleteResourceRequirementRequest> getDryRunRequest() {
@@ -57,6 +59,10 @@ public class DeleteResourceRequirementRequest extends KscWebServiceRequest imple
     @Override
     public DeleteResourceRequirementRequest clone() {
         return (DeleteResourceRequirementRequest) super.clone();
+    }
+
+    public String toString() {
+        return "DeleteResourceRequirementRequest(ResourceRequirementId=" + this.getResourceRequirementId() + ")";
     }
 }
 

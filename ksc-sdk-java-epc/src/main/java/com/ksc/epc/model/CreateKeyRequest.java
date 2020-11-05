@@ -42,9 +42,11 @@ public class CreateKeyRequest extends KscWebServiceRequest implements
     public void setKeyName(String keyName) {
         this.keyName = keyName;
     }
+
     public String getKeyName() {
         return keyName;
     }
+
 
     @Override
     public Request<CreateKeyRequest> getDryRunRequest() {
@@ -57,6 +59,10 @@ public class CreateKeyRequest extends KscWebServiceRequest implements
     @Override
     public CreateKeyRequest clone() {
         return (CreateKeyRequest) super.clone();
+    }
+
+    public String toString() {
+        return "CreateKeyRequest(KeyName=" + this.getKeyName() + ")";
     }
 }
 

@@ -44,9 +44,11 @@ public class DescribeKeysResult implements Serializable, Cloneable {
     public void setRequestId(String RequestId) {
         this.RequestId = RequestId;
     }
+
     public String getRequestId() {
         return RequestId;
     }
+
     public void addKeySet(Key... keys) {
 		if (this.KeySet == null) {
 			this.KeySet = new SdkInternalList<Key>();
@@ -59,21 +61,27 @@ public class DescribeKeysResult implements Serializable, Cloneable {
     public void setKeySet(List<Key> keys) {
         this.KeySet = new SdkInternalList<Key>(keys);
     }
+
     public  List<Key> getKeySet() {
         return KeySet;
     }
+
     public void setTotalCount(Integer TotalCount) {
         this.TotalCount = TotalCount;
     }
+
     public Integer getTotalCount() {
         return TotalCount;
     }
+
     public void setNextToken(String NextToken) {
         this.NextToken = NextToken;
     }
+
     public String getNextToken() {
         return NextToken;
     }
+
 
     @Override
     public DescribeKeysResult clone() {
@@ -84,5 +92,9 @@ public class DescribeKeysResult implements Serializable, Cloneable {
                     "Got a CloneNotSupportedException from Object.clone() "
                             + "even though we're Cloneable!", e);
         }
+    }
+
+    public String toString() {
+        return "DescribeKeysResult(RequestId=" + this.getRequestId() + ",KeySet=" + this.getKeySet() + ",TotalCount=" + this.getTotalCount() + ",NextToken=" + this.getNextToken() + ")";
     }
 }

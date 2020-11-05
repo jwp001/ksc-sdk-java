@@ -56,21 +56,27 @@ public class DescribeVpnsRequest extends KscWebServiceRequest implements
     public void setRemoteManagementId(String remoteManagementId) {
         this.remoteManagementId = remoteManagementId;
     }
+
     public String getRemoteManagementId() {
         return remoteManagementId;
     }
+
     public void setDynamicCode(String dynamicCode) {
         this.dynamicCode = dynamicCode;
     }
+
     public String getDynamicCode() {
         return dynamicCode;
     }
+
     public void setPin(String pin) {
         this.pin = pin;
     }
+
     public String getPin() {
         return pin;
     }
+
 
     @Override
     public Request<DescribeVpnsRequest> getDryRunRequest() {
@@ -83,6 +89,10 @@ public class DescribeVpnsRequest extends KscWebServiceRequest implements
     @Override
     public DescribeVpnsRequest clone() {
         return (DescribeVpnsRequest) super.clone();
+    }
+
+    public String toString() {
+        return "DescribeVpnsRequest(RemoteManagementId=" + this.getRemoteManagementId() + ",DynamicCode=" + this.getDynamicCode() + ",Pin=" + this.getPin() + ")";
     }
 }
 

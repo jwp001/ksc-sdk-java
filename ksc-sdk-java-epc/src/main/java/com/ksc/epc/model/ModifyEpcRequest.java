@@ -49,15 +49,19 @@ public class ModifyEpcRequest extends KscWebServiceRequest implements
     public void setHostName(String hostName) {
         this.hostName = hostName;
     }
+
     public String getHostName() {
         return hostName;
     }
+
     public void setHostId(String hostId) {
         this.hostId = hostId;
     }
+
     public String getHostId() {
         return hostId;
     }
+
 
     @Override
     public Request<ModifyEpcRequest> getDryRunRequest() {
@@ -70,6 +74,10 @@ public class ModifyEpcRequest extends KscWebServiceRequest implements
     @Override
     public ModifyEpcRequest clone() {
         return (ModifyEpcRequest) super.clone();
+    }
+
+    public String toString() {
+        return "ModifyEpcRequest(HostName=" + this.getHostName() + ",HostId=" + this.getHostId() + ")";
     }
 }
 

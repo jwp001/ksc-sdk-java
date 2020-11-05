@@ -49,15 +49,19 @@ public class ModifyImageRequest extends KscWebServiceRequest implements
     public void setImageName(String imageName) {
         this.imageName = imageName;
     }
+
     public String getImageName() {
         return imageName;
     }
+
     public void setImageId(String imageId) {
         this.imageId = imageId;
     }
+
     public String getImageId() {
         return imageId;
     }
+
 
     @Override
     public Request<ModifyImageRequest> getDryRunRequest() {
@@ -70,6 +74,10 @@ public class ModifyImageRequest extends KscWebServiceRequest implements
     @Override
     public ModifyImageRequest clone() {
         return (ModifyImageRequest) super.clone();
+    }
+
+    public String toString() {
+        return "ModifyImageRequest(ImageName=" + this.getImageName() + ",ImageId=" + this.getImageId() + ")";
     }
 }
 

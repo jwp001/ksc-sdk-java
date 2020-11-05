@@ -35,44 +35,61 @@ public class Image {
     public void setImageId(String imageId) {
         this.imageId = imageId;
     }
+
     public String getImageId() {
         return imageId;
     }
+
     public void setImageName(String imageName) {
         this.imageName = imageName;
     }
+
     public String getImageName() {
         return imageName;
     }
+
     public void setImageType(String imageType) {
         this.imageType = imageType;
     }
+
     public String getImageType() {
         return imageType;
     }
+
     public void setOsName(String osName) {
         this.osName = osName;
     }
+
     public String getOsName() {
         return osName;
     }
+
     public void setOsType(String osType) {
         this.osType = osType;
     }
+
     public String getOsType() {
         return osType;
     }
+
     public void setEnableContainer(Boolean enableContainer) {
         this.enableContainer = enableContainer;
     }
+
     public Boolean getEnableContainer() {
         return enableContainer;
     }
+
     public void setCreateTime(String createTime) {
         this.createTime = createTime;
     }
+
     public String getCreateTime() {
         return createTime;
+    }
+
+    public String toString() {
+        return "Image(ImageId=" + this.getImageId() + ",ImageName=" + this.getImageName() + ",ImageType=" + this.getImageType() + ",OsName=" + this.getOsName() + ",OsType=" + this.getOsType() + ",EnableContainer=" + this.getEnableContainer() + ",CreateTime=" + this.getCreateTime() + ")";
     }
 
 }

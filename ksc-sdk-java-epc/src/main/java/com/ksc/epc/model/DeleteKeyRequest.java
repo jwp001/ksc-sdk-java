@@ -42,9 +42,11 @@ public class DeleteKeyRequest extends KscWebServiceRequest implements
     public void setKeyId(String keyId) {
         this.keyId = keyId;
     }
+
     public String getKeyId() {
         return keyId;
     }
+
 
     @Override
     public Request<DeleteKeyRequest> getDryRunRequest() {
@@ -57,6 +59,10 @@ public class DeleteKeyRequest extends KscWebServiceRequest implements
     @Override
     public DeleteKeyRequest clone() {
         return (DeleteKeyRequest) super.clone();
+    }
+
+    public String toString() {
+        return "DeleteKeyRequest(KeyId=" + this.getKeyId() + ")";
     }
 }
 

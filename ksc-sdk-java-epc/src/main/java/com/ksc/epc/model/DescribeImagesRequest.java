@@ -70,12 +70,15 @@ public class DescribeImagesRequest extends KscWebServiceRequest implements
 			this.filters.add(filter);
 		}
 	}
+
     public void setFilters(List<Filter> filters) {
         this.filters = new com.ksc.internal.SdkInternalList<Filter>(filters);
     }
+
     public  List<Filter> getFilters() {
         return filters;
     }
+
     public void addImageIds(String... imageIds){
         if (this.imageIds == null) {
             this.imageIds = new com.ksc.internal.SdkInternalList<String>();
@@ -84,24 +87,31 @@ public class DescribeImagesRequest extends KscWebServiceRequest implements
             this.imageIds.add(value);
         }
     }
+
     public void setImageIds(List<String> imageIds) {
         this.imageIds = new com.ksc.internal.SdkInternalList<String>(imageIds);
     }
+
     public  List<String> getImageIds() {
         return imageIds;
     }
+
     public void setMaxResults(String maxResults) {
         this.maxResults = maxResults;
     }
+
     public String getMaxResults() {
         return maxResults;
     }
+
     public void setNextToken(String nextToken) {
         this.nextToken = nextToken;
     }
+
     public String getNextToken() {
         return nextToken;
     }
+
 
     @Override
     public Request<DescribeImagesRequest> getDryRunRequest() {
@@ -114,6 +124,10 @@ public class DescribeImagesRequest extends KscWebServiceRequest implements
     @Override
     public DescribeImagesRequest clone() {
         return (DescribeImagesRequest) super.clone();
+    }
+
+    public String toString() {
+        return "DescribeImagesRequest(filters=" + this.getFilters() + ",ImageIds=" + this.getImageIds() + ",MaxResults=" + this.getMaxResults() + ",NextToken=" + this.getNextToken() + ")";
     }
 }
 

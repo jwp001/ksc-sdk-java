@@ -39,21 +39,27 @@ public class CreateKeyResult implements Serializable, Cloneable {
     public void setRequestId(String RequestId) {
         this.RequestId = RequestId;
     }
+
     public String getRequestId() {
         return RequestId;
     }
+
     public void setPrivateKey(String PrivateKey) {
         this.PrivateKey = PrivateKey;
     }
+
     public String getPrivateKey() {
         return PrivateKey;
     }
+
     public void setKey(Key Key) {
         this.Key = Key;
     }
+
     public Key getKey() {
         return Key;
     }
+
 
     @Override
     public CreateKeyResult clone() {
@@ -64,5 +70,9 @@ public class CreateKeyResult implements Serializable, Cloneable {
                     "Got a CloneNotSupportedException from Object.clone() "
                             + "even though we're Cloneable!", e);
         }
+    }
+
+    public String toString() {
+        return "CreateKeyResult(RequestId=" + this.getRequestId() + ",PrivateKey=" + this.getPrivateKey() + ",Key=" + this.getKey() + ")";
     }
 }

@@ -10,10 +10,10 @@ import static com.fasterxml.jackson.core.JsonToken.END_OBJECT;
 import static com.fasterxml.jackson.core.JsonToken.FIELD_NAME;
 import static com.fasterxml.jackson.core.JsonToken.START_OBJECT;
 import static com.fasterxml.jackson.core.JsonToken.VALUE_NULL;
-        import com.ksc.epc.model.CpuDevice;
-        import com.ksc.epc.model.GpuDevice;
-        import com.ksc.epc.model.PhysicalDiskDevice;
-        import com.ksc.epc.model.MonthlyPrice;
+import com.ksc.epc.model.CpuDevice;
+import com.ksc.epc.model.GpuDevice;
+import com.ksc.epc.model.PhysicalDiskDevice;
+import com.ksc.epc.model.MonthlyPrice;
 
 public class DeviceAttributeJsonUnmarshaller implements Unmarshaller<DeviceAttribute, JsonUnmarshallerContext> {
     private static DeviceAttributeJsonUnmarshaller instance;

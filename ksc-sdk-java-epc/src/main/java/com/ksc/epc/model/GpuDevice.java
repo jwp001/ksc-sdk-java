@@ -15,14 +15,21 @@ public class GpuDevice {
     public void setGpuModel(String gpuModel) {
         this.gpuModel = gpuModel;
     }
+
     public String getGpuModel() {
         return gpuModel;
     }
+
     public void setGpuCount(String gpuCount) {
         this.gpuCount = gpuCount;
     }
+
     public String getGpuCount() {
         return gpuCount;
+    }
+
+    public String toString() {
+        return "GpuDevice(GpuModel=" + this.getGpuModel() + ",GpuCount=" + this.getGpuCount() + ")";
     }
 
 }
