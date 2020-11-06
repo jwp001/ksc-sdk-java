@@ -1,23 +1,19 @@
 package com.ksc.epc;
 
 import com.ksc.epc.model.*;
-import com.ksc.model.Filter;
 import com.ksc.regions.InMemoryRegionImpl;
 import com.ksc.regions.Region;
 import org.apache.log4j.Logger;
 import org.junit.Test;
 
-import com.ksc.auth.AWSCredentials;
-import com.ksc.auth.BasicAWSCredentials;
 
-import java.util.ArrayList;
 
 public class KSCEPCClientTest {
 	private static final Logger log = Logger.getLogger(KSCEPCClientTest.class);
     @Test
     public void createEpc(){
-        AWSCredentials credentials = new BasicAWSCredentials("AKLTUnpB8vY3T0SwYFGprjj_7w","OGmPbxxelZZ/94zx7yna8fjA6pEaEaeqIv6PoV6sPnFET2/fhkUaz7ZwcVOOM0NW3Q==");
-        KSCEPCClient client = new KSCEPCClient(credentials);
+
+        KSCEPCClient client = new KSCEPCClient();
         client.setEndpoint("http://epc.inner.api.ksyun.com");
         client.setServiceNameIntern("epc");
         Region region = new Region(new InMemoryRegionImpl("cn-shanghai-3", null));
@@ -40,8 +36,8 @@ public class KSCEPCClientTest {
 
     @Test
     public void describeEpcs(){
-        AWSCredentials credentials = new BasicAWSCredentials("AKLTUnpB8vY3T0SwYFGprjj_7w","OGmPbxxelZZ/94zx7yna8fjA6pEaEaeqIv6PoV6sPnFET2/fhkUaz7ZwcVOOM0NW3Q==");
-        KSCEPCClient client = new KSCEPCClient(credentials);
+
+        KSCEPCClient client = new KSCEPCClient();
         client.setEndpoint("http://epc.inner.api.ksyun.com");
         client.setServiceNameIntern("epc");
         Region region = new Region(new InMemoryRegionImpl("cn-shanghai-3", null));
@@ -53,8 +49,8 @@ public class KSCEPCClientTest {
 
     @Test
     public void deleteEpc(){
-        AWSCredentials credentials = new BasicAWSCredentials("AKLTUnpB8vY3T0SwYFGprjj_7w","OGmPbxxelZZ/94zx7yna8fjA6pEaEaeqIv6PoV6sPnFET2/fhkUaz7ZwcVOOM0NW3Q==");
-        KSCEPCClient client = new KSCEPCClient(credentials);
+
+        KSCEPCClient client = new KSCEPCClient();
         client.setEndpoint("http://epc.inner.api.ksyun.com");
         client.setServiceNameIntern("epc");
         Region region = new Region(new InMemoryRegionImpl("cn-shanghai-3", null));
@@ -67,8 +63,8 @@ public class KSCEPCClientTest {
 
     @Test
     public void modifyEpc(){
-        AWSCredentials credentials = new BasicAWSCredentials("AKLTUnpB8vY3T0SwYFGprjj_7w","OGmPbxxelZZ/94zx7yna8fjA6pEaEaeqIv6PoV6sPnFET2/fhkUaz7ZwcVOOM0NW3Q==");
-        KSCEPCClient client = new KSCEPCClient(credentials);
+
+        KSCEPCClient client = new KSCEPCClient();
         client.setEndpoint("http://epc.inner.api.ksyun.com");
         client.setServiceNameIntern("epc");
         Region region = new Region(new InMemoryRegionImpl("cn-shanghai-3", null));
@@ -82,8 +78,8 @@ public class KSCEPCClientTest {
 
     @Test
     public void startEpc(){
-        AWSCredentials credentials = new BasicAWSCredentials("AKLTUnpB8vY3T0SwYFGprjj_7w","OGmPbxxelZZ/94zx7yna8fjA6pEaEaeqIv6PoV6sPnFET2/fhkUaz7ZwcVOOM0NW3Q==");
-        KSCEPCClient client = new KSCEPCClient(credentials);
+
+        KSCEPCClient client = new KSCEPCClient();
         client.setEndpoint("http://epc.inner.api.ksyun.com");
         client.setServiceNameIntern("epc");
         Region region = new Region(new InMemoryRegionImpl("cn-shanghai-3", null));
@@ -96,8 +92,8 @@ public class KSCEPCClientTest {
 
     @Test
     public void stopEpc(){
-        AWSCredentials credentials = new BasicAWSCredentials("AKLTUnpB8vY3T0SwYFGprjj_7w","OGmPbxxelZZ/94zx7yna8fjA6pEaEaeqIv6PoV6sPnFET2/fhkUaz7ZwcVOOM0NW3Q==");
-        KSCEPCClient client = new KSCEPCClient(credentials);
+
+        KSCEPCClient client = new KSCEPCClient();
         client.setEndpoint("http://epc.inner.api.ksyun.com");
         client.setServiceNameIntern("epc");
         Region region = new Region(new InMemoryRegionImpl("cn-shanghai-3", null));
@@ -110,8 +106,8 @@ public class KSCEPCClientTest {
 
     @Test
     public void rebootEpc(){
-        AWSCredentials credentials = new BasicAWSCredentials("AKLTUnpB8vY3T0SwYFGprjj_7w","OGmPbxxelZZ/94zx7yna8fjA6pEaEaeqIv6PoV6sPnFET2/fhkUaz7ZwcVOOM0NW3Q==");
-        KSCEPCClient client = new KSCEPCClient(credentials);
+
+        KSCEPCClient client = new KSCEPCClient();
         client.setEndpoint("http://epc.inner.api.ksyun.com");
         client.setServiceNameIntern("epc");
         Region region = new Region(new InMemoryRegionImpl("cn-shanghai-3", null));
@@ -124,8 +120,8 @@ public class KSCEPCClientTest {
 
     @Test
     public void reinstallEpc(){
-        AWSCredentials credentials = new BasicAWSCredentials("AKLTUnpB8vY3T0SwYFGprjj_7w","OGmPbxxelZZ/94zx7yna8fjA6pEaEaeqIv6PoV6sPnFET2/fhkUaz7ZwcVOOM0NW3Q==");
-        KSCEPCClient client = new KSCEPCClient(credentials);
+
+        KSCEPCClient client = new KSCEPCClient();
         client.setEndpoint("http://epc.inner.api.ksyun.com");
         client.setServiceNameIntern("epc");
         Region region = new Region(new InMemoryRegionImpl("cn-shanghai-3", null));
@@ -143,8 +139,8 @@ public class KSCEPCClientTest {
 
     @Test
     public void reinstallCustomerEpc(){
-        AWSCredentials credentials = new BasicAWSCredentials("AKLTUnpB8vY3T0SwYFGprjj_7w","OGmPbxxelZZ/94zx7yna8fjA6pEaEaeqIv6PoV6sPnFET2/fhkUaz7ZwcVOOM0NW3Q==");
-        KSCEPCClient client = new KSCEPCClient(credentials);
+
+        KSCEPCClient client = new KSCEPCClient();
         client.setEndpoint("http://epc.inner.api.ksyun.com");
         client.setServiceNameIntern("epc");
         Region region = new Region(new InMemoryRegionImpl("cn-shanghai-3", null));
@@ -159,8 +155,8 @@ public class KSCEPCClientTest {
 
     @Test
     public void resetPassword(){
-        AWSCredentials credentials = new BasicAWSCredentials("AKLTUnpB8vY3T0SwYFGprjj_7w","OGmPbxxelZZ/94zx7yna8fjA6pEaEaeqIv6PoV6sPnFET2/fhkUaz7ZwcVOOM0NW3Q==");
-        KSCEPCClient client = new KSCEPCClient(credentials);
+
+        KSCEPCClient client = new KSCEPCClient();
         client.setEndpoint("http://epc.inner.api.ksyun.com");
         client.setServiceNameIntern("epc");
         Region region = new Region(new InMemoryRegionImpl("cn-shanghai-3", null));
@@ -174,8 +170,8 @@ public class KSCEPCClientTest {
 
     @Test
     public void modifyHyperThreading(){
-        AWSCredentials credentials = new BasicAWSCredentials("AKLTUnpB8vY3T0SwYFGprjj_7w","OGmPbxxelZZ/94zx7yna8fjA6pEaEaeqIv6PoV6sPnFET2/fhkUaz7ZwcVOOM0NW3Q==");
-        KSCEPCClient client = new KSCEPCClient(credentials);
+
+        KSCEPCClient client = new KSCEPCClient();
         client.setEndpoint("http://epc.inner.api.ksyun.com");
         client.setServiceNameIntern("epc");
         Region region = new Region(new InMemoryRegionImpl("cn-shanghai-3", null));
@@ -189,8 +185,8 @@ public class KSCEPCClientTest {
 
     @Test
     public void createImage(){
-        AWSCredentials credentials = new BasicAWSCredentials("AKLTUnpB8vY3T0SwYFGprjj_7w","OGmPbxxelZZ/94zx7yna8fjA6pEaEaeqIv6PoV6sPnFET2/fhkUaz7ZwcVOOM0NW3Q==");
-        KSCEPCClient client = new KSCEPCClient(credentials);
+
+        KSCEPCClient client = new KSCEPCClient();
         client.setEndpoint("http://epc.inner.api.ksyun.com");
         client.setServiceNameIntern("epc");
         Region region = new Region(new InMemoryRegionImpl("cn-shanghai-3", null));
@@ -204,8 +200,8 @@ public class KSCEPCClientTest {
 
     @Test
     public void modifyImage(){
-        AWSCredentials credentials = new BasicAWSCredentials("AKLTUnpB8vY3T0SwYFGprjj_7w","OGmPbxxelZZ/94zx7yna8fjA6pEaEaeqIv6PoV6sPnFET2/fhkUaz7ZwcVOOM0NW3Q==");
-        KSCEPCClient client = new KSCEPCClient(credentials);
+
+        KSCEPCClient client = new KSCEPCClient();
         client.setEndpoint("http://epc.inner.api.ksyun.com");
         client.setServiceNameIntern("epc");
         Region region = new Region(new InMemoryRegionImpl("cn-shanghai-3", null));
@@ -220,8 +216,8 @@ public class KSCEPCClientTest {
 
     @Test
     public void deleteImage(){
-        AWSCredentials credentials = new BasicAWSCredentials("AKLTUnpB8vY3T0SwYFGprjj_7w","OGmPbxxelZZ/94zx7yna8fjA6pEaEaeqIv6PoV6sPnFET2/fhkUaz7ZwcVOOM0NW3Q==");
-        KSCEPCClient client = new KSCEPCClient(credentials);
+
+        KSCEPCClient client = new KSCEPCClient();
         client.setEndpoint("http://epc.inner.api.ksyun.com");
         client.setServiceNameIntern("epc");
         Region region = new Region(new InMemoryRegionImpl("cn-shanghai-3", null));
@@ -234,8 +230,8 @@ public class KSCEPCClientTest {
 
     @Test
     public void describeImages(){
-        AWSCredentials credentials = new BasicAWSCredentials("AKLTUnpB8vY3T0SwYFGprjj_7w","OGmPbxxelZZ/94zx7yna8fjA6pEaEaeqIv6PoV6sPnFET2/fhkUaz7ZwcVOOM0NW3Q==");
-        KSCEPCClient client = new KSCEPCClient(credentials);
+
+        KSCEPCClient client = new KSCEPCClient();
         client.setEndpoint("http://epc.inner.api.ksyun.com");
         client.setServiceNameIntern("epc");
         Region region = new Region(new InMemoryRegionImpl("cn-shanghai-3", null));
@@ -247,8 +243,8 @@ public class KSCEPCClientTest {
 
     @Test
     public void importKey(){
-        AWSCredentials credentials = new BasicAWSCredentials("AKLTUnpB8vY3T0SwYFGprjj_7w","OGmPbxxelZZ/94zx7yna8fjA6pEaEaeqIv6PoV6sPnFET2/fhkUaz7ZwcVOOM0NW3Q==");
-        KSCEPCClient client = new KSCEPCClient(credentials);
+
+        KSCEPCClient client = new KSCEPCClient();
         client.setEndpoint("http://epc.inner.api.ksyun.com");
         client.setServiceNameIntern("epc");
         Region region = new Region(new InMemoryRegionImpl("cn-shanghai-3", null));
@@ -262,8 +258,8 @@ public class KSCEPCClientTest {
 
     @Test
     public void deleteKey(){
-        AWSCredentials credentials = new BasicAWSCredentials("AKLTUnpB8vY3T0SwYFGprjj_7w","OGmPbxxelZZ/94zx7yna8fjA6pEaEaeqIv6PoV6sPnFET2/fhkUaz7ZwcVOOM0NW3Q==");
-        KSCEPCClient client = new KSCEPCClient(credentials);
+
+        KSCEPCClient client = new KSCEPCClient();
         client.setEndpoint("http://epc.inner.api.ksyun.com");
         client.setServiceNameIntern("epc");
         Region region = new Region(new InMemoryRegionImpl("cn-shanghai-3", null));
@@ -276,8 +272,8 @@ public class KSCEPCClientTest {
 
     @Test
     public void modifyKey(){
-        AWSCredentials credentials = new BasicAWSCredentials("AKLTUnpB8vY3T0SwYFGprjj_7w","OGmPbxxelZZ/94zx7yna8fjA6pEaEaeqIv6PoV6sPnFET2/fhkUaz7ZwcVOOM0NW3Q==");
-        KSCEPCClient client = new KSCEPCClient(credentials);
+
+        KSCEPCClient client = new KSCEPCClient();
         client.setEndpoint("http://epc.inner.api.ksyun.com");
         client.setServiceNameIntern("epc");
         Region region = new Region(new InMemoryRegionImpl("cn-shanghai-3", null));
@@ -291,8 +287,8 @@ public class KSCEPCClientTest {
 
     @Test
     public void createKey(){
-        AWSCredentials credentials = new BasicAWSCredentials("AKLTUnpB8vY3T0SwYFGprjj_7w","OGmPbxxelZZ/94zx7yna8fjA6pEaEaeqIv6PoV6sPnFET2/fhkUaz7ZwcVOOM0NW3Q==");
-        KSCEPCClient client = new KSCEPCClient(credentials);
+
+        KSCEPCClient client = new KSCEPCClient();
         client.setEndpoint("http://epc.inner.api.ksyun.com");
         client.setServiceNameIntern("epc");
         Region region = new Region(new InMemoryRegionImpl("cn-shanghai-3", null));
@@ -305,8 +301,8 @@ public class KSCEPCClientTest {
 
     @Test
     public void describeKeys(){
-        AWSCredentials credentials = new BasicAWSCredentials("AKLTUnpB8vY3T0SwYFGprjj_7w","OGmPbxxelZZ/94zx7yna8fjA6pEaEaeqIv6PoV6sPnFET2/fhkUaz7ZwcVOOM0NW3Q==");
-        KSCEPCClient client = new KSCEPCClient(credentials);
+
+        KSCEPCClient client = new KSCEPCClient();
         client.setEndpoint("http://epc.inner.api.ksyun.com");
         client.setServiceNameIntern("epc");
         Region region = new Region(new InMemoryRegionImpl("cn-shanghai-3", null));
@@ -319,8 +315,8 @@ public class KSCEPCClientTest {
 
     @Test
     public void describePhysicalMonitor(){
-        AWSCredentials credentials = new BasicAWSCredentials("AKLTUnpB8vY3T0SwYFGprjj_7w","OGmPbxxelZZ/94zx7yna8fjA6pEaEaeqIv6PoV6sPnFET2/fhkUaz7ZwcVOOM0NW3Q==");
-        KSCEPCClient client = new KSCEPCClient(credentials);
+
+        KSCEPCClient client = new KSCEPCClient();
         client.setEndpoint("http://epc.inner.api.ksyun.com");
         client.setServiceNameIntern("epc");
         Region region = new Region(new InMemoryRegionImpl("cn-shanghai-3", null));
@@ -333,8 +329,8 @@ public class KSCEPCClientTest {
 
     @Test
     public void modifyNetworkInterfaceAttribute(){
-        AWSCredentials credentials = new BasicAWSCredentials("AKLTUnpB8vY3T0SwYFGprjj_7w","OGmPbxxelZZ/94zx7yna8fjA6pEaEaeqIv6PoV6sPnFET2/fhkUaz7ZwcVOOM0NW3Q==");
-        KSCEPCClient client = new KSCEPCClient(credentials);
+
+        KSCEPCClient client = new KSCEPCClient();
         client.setEndpoint("http://epc.inner.api.ksyun.com");
         client.setServiceNameIntern("epc");
         Region region = new Region(new InMemoryRegionImpl("cn-shanghai-3", null));
@@ -350,8 +346,8 @@ public class KSCEPCClientTest {
 
     @Test
     public void modifyDns(){
-        AWSCredentials credentials = new BasicAWSCredentials("AKLTUnpB8vY3T0SwYFGprjj_7w","OGmPbxxelZZ/94zx7yna8fjA6pEaEaeqIv6PoV6sPnFET2/fhkUaz7ZwcVOOM0NW3Q==");
-        KSCEPCClient client = new KSCEPCClient(credentials);
+
+        KSCEPCClient client = new KSCEPCClient();
         client.setEndpoint("http://epc.inner.api.ksyun.com");
         client.setServiceNameIntern("epc");
         Region region = new Region(new InMemoryRegionImpl("cn-shanghai-3", null));
@@ -366,8 +362,8 @@ public class KSCEPCClientTest {
 
     @Test
     public void modifySecurityGroup(){
-        AWSCredentials credentials = new BasicAWSCredentials("AKLTUnpB8vY3T0SwYFGprjj_7w","OGmPbxxelZZ/94zx7yna8fjA6pEaEaeqIv6PoV6sPnFET2/fhkUaz7ZwcVOOM0NW3Q==");
-        KSCEPCClient client = new KSCEPCClient(credentials);
+
+        KSCEPCClient client = new KSCEPCClient();
         client.setEndpoint("http://epc.inner.api.ksyun.com");
         client.setServiceNameIntern("epc");
         Region region = new Region(new InMemoryRegionImpl("cn-shanghai-3", null));
@@ -382,8 +378,8 @@ public class KSCEPCClientTest {
 
     @Test
     public void describeCabinets(){
-        AWSCredentials credentials = new BasicAWSCredentials("AKLTUnpB8vY3T0SwYFGprjj_7w","OGmPbxxelZZ/94zx7yna8fjA6pEaEaeqIv6PoV6sPnFET2/fhkUaz7ZwcVOOM0NW3Q==");
-        KSCEPCClient client = new KSCEPCClient(credentials);
+
+        KSCEPCClient client = new KSCEPCClient();
         client.setEndpoint("http://epc.inner.api.ksyun.com");
         client.setServiceNameIntern("epc");
         Region region = new Region(new InMemoryRegionImpl("cn-shanghai-3", null));
@@ -395,8 +391,8 @@ public class KSCEPCClientTest {
 
     @Test
     public void describeInspections(){
-        AWSCredentials credentials = new BasicAWSCredentials("AKLTUnpB8vY3T0SwYFGprjj_7w","OGmPbxxelZZ/94zx7yna8fjA6pEaEaeqIv6PoV6sPnFET2/fhkUaz7ZwcVOOM0NW3Q==");
-        KSCEPCClient client = new KSCEPCClient(credentials);
+
+        KSCEPCClient client = new KSCEPCClient();
         client.setEndpoint("http://epc.inner.api.ksyun.com");
         client.setServiceNameIntern("epc");
         Region region = new Region(new InMemoryRegionImpl("cn-shanghai-3", null));
@@ -408,8 +404,8 @@ public class KSCEPCClientTest {
 
     @Test
     public void describeEpcStocks(){
-        AWSCredentials credentials = new BasicAWSCredentials("AKLTUnpB8vY3T0SwYFGprjj_7w","OGmPbxxelZZ/94zx7yna8fjA6pEaEaeqIv6PoV6sPnFET2/fhkUaz7ZwcVOOM0NW3Q==");
-        KSCEPCClient client = new KSCEPCClient(credentials);
+
+        KSCEPCClient client = new KSCEPCClient();
         client.setEndpoint("http://epc.inner.api.ksyun.com");
         client.setServiceNameIntern("epc");
         Region region = new Region(new InMemoryRegionImpl("cn-shanghai-3", null));
@@ -422,8 +418,8 @@ public class KSCEPCClientTest {
 
     @Test
     public void describeEpcDeviceAttributes(){
-        AWSCredentials credentials = new BasicAWSCredentials("AKLTUnpB8vY3T0SwYFGprjj_7w","OGmPbxxelZZ/94zx7yna8fjA6pEaEaeqIv6PoV6sPnFET2/fhkUaz7ZwcVOOM0NW3Q==");
-        KSCEPCClient client = new KSCEPCClient(credentials);
+
+        KSCEPCClient client = new KSCEPCClient();
         client.setEndpoint("http://epc.inner.api.ksyun.com");
         client.setServiceNameIntern("epc");
         Region region = new Region(new InMemoryRegionImpl("cn-shanghai-3", null));
@@ -435,8 +431,8 @@ public class KSCEPCClientTest {
 
     @Test
     public void describeEpcTrashes(){
-        AWSCredentials credentials = new BasicAWSCredentials("AKLTUnpB8vY3T0SwYFGprjj_7w","OGmPbxxelZZ/94zx7yna8fjA6pEaEaeqIv6PoV6sPnFET2/fhkUaz7ZwcVOOM0NW3Q==");
-        KSCEPCClient client = new KSCEPCClient(credentials);
+
+        KSCEPCClient client = new KSCEPCClient();
         client.setEndpoint("http://epc.inner.api.ksyun.com");
         client.setServiceNameIntern("epc");
         Region region = new Region(new InMemoryRegionImpl("cn-shanghai-3", null));
@@ -472,8 +468,8 @@ public class KSCEPCClientTest {
 
     @Test
     public void describePrice(){
-        AWSCredentials credentials = new BasicAWSCredentials("AKLTUnpB8vY3T0SwYFGprjj_7w","OGmPbxxelZZ/94zx7yna8fjA6pEaEaeqIv6PoV6sPnFET2/fhkUaz7ZwcVOOM0NW3Q==");
-        KSCEPCClient client = new KSCEPCClient(credentials);
+
+        KSCEPCClient client = new KSCEPCClient();
         client.setEndpoint("http://epc.inner.api.ksyun.com");
         client.setServiceNameIntern("epc");
         Region region = new Region(new InMemoryRegionImpl("cn-shanghai-3", null));
@@ -489,8 +485,8 @@ public class KSCEPCClientTest {
 
     @Test
     public void describeAccessorys(){
-        AWSCredentials credentials = new BasicAWSCredentials("AKLTUnpB8vY3T0SwYFGprjj_7w","OGmPbxxelZZ/94zx7yna8fjA6pEaEaeqIv6PoV6sPnFET2/fhkUaz7ZwcVOOM0NW3Q==");
-        KSCEPCClient client = new KSCEPCClient(credentials);
+
+        KSCEPCClient client = new KSCEPCClient();
         client.setEndpoint("http://epc.inner.api.ksyun.com");
         client.setServiceNameIntern("epc");
         Region region = new Region(new InMemoryRegionImpl("cn-shanghai-3", null));
@@ -502,8 +498,8 @@ public class KSCEPCClientTest {
 
     @Test
     public void deleteAccessory(){
-        AWSCredentials credentials = new BasicAWSCredentials("AKLTUnpB8vY3T0SwYFGprjj_7w","OGmPbxxelZZ/94zx7yna8fjA6pEaEaeqIv6PoV6sPnFET2/fhkUaz7ZwcVOOM0NW3Q==");
-        KSCEPCClient client = new KSCEPCClient(credentials);
+
+        KSCEPCClient client = new KSCEPCClient();
         client.setEndpoint("http://epc.inner.api.ksyun.com");
         client.setServiceNameIntern("epc");
         Region region = new Region(new InMemoryRegionImpl("cn-shanghai-3", null));
@@ -517,8 +513,8 @@ public class KSCEPCClientTest {
 
     @Test
     public void createAccessory(){
-        AWSCredentials credentials = new BasicAWSCredentials("AKLTUnpB8vY3T0SwYFGprjj_7w","OGmPbxxelZZ/94zx7yna8fjA6pEaEaeqIv6PoV6sPnFET2/fhkUaz7ZwcVOOM0NW3Q==");
-        KSCEPCClient client = new KSCEPCClient(credentials);
+
+        KSCEPCClient client = new KSCEPCClient();
         client.setEndpoint("http://epc.inner.api.ksyun.com");
         client.setServiceNameIntern("epc");
         Region region = new Region(new InMemoryRegionImpl("cn-shanghai-3", null));
@@ -535,8 +531,8 @@ public class KSCEPCClientTest {
 
     @Test
     public void buyAccessory(){
-        AWSCredentials credentials = new BasicAWSCredentials("AKLTUnpB8vY3T0SwYFGprjj_7w","OGmPbxxelZZ/94zx7yna8fjA6pEaEaeqIv6PoV6sPnFET2/fhkUaz7ZwcVOOM0NW3Q==");
-        KSCEPCClient client = new KSCEPCClient(credentials);
+
+        KSCEPCClient client = new KSCEPCClient();
         client.setEndpoint("http://epc.inner.api.ksyun.com");
         client.setServiceNameIntern("epc");
         Region region = new Region(new InMemoryRegionImpl("cn-shanghai-3", null));
@@ -553,8 +549,8 @@ public class KSCEPCClientTest {
 
     @Test
     public void createCabinet(){
-        AWSCredentials credentials = new BasicAWSCredentials("AKLTUnpB8vY3T0SwYFGprjj_7w","OGmPbxxelZZ/94zx7yna8fjA6pEaEaeqIv6PoV6sPnFET2/fhkUaz7ZwcVOOM0NW3Q==");
-        KSCEPCClient client = new KSCEPCClient(credentials);
+
+        KSCEPCClient client = new KSCEPCClient();
         client.setEndpoint("http://epc.inner.api.ksyun.com");
         client.setServiceNameIntern("epc");
         Region region = new Region(new InMemoryRegionImpl("cn-shanghai-3", null));
@@ -569,8 +565,8 @@ public class KSCEPCClientTest {
 
     @Test
     public void describeProcesses(){
-        AWSCredentials credentials = new BasicAWSCredentials("AKLTUnpB8vY3T0SwYFGprjj_7w","OGmPbxxelZZ/94zx7yna8fjA6pEaEaeqIv6PoV6sPnFET2/fhkUaz7ZwcVOOM0NW3Q==");
-        KSCEPCClient client = new KSCEPCClient(credentials);
+
+        KSCEPCClient client = new KSCEPCClient();
         client.setEndpoint("http://epc.inner.api.ksyun.com");
         client.setServiceNameIntern("epc");
         Region region = new Region(new InMemoryRegionImpl("cn-shanghai-3", null));
@@ -582,8 +578,8 @@ public class KSCEPCClientTest {
 
     @Test
     public void createProcess(){
-        AWSCredentials credentials = new BasicAWSCredentials("AKLTUnpB8vY3T0SwYFGprjj_7w","OGmPbxxelZZ/94zx7yna8fjA6pEaEaeqIv6PoV6sPnFET2/fhkUaz7ZwcVOOM0NW3Q==");
-        KSCEPCClient client = new KSCEPCClient(credentials);
+
+        KSCEPCClient client = new KSCEPCClient();
         client.setEndpoint("http://epc.inner.api.ksyun.com");
         client.setServiceNameIntern("epc");
         Region region = new Region(new InMemoryRegionImpl("cn-shanghai-3", null));
@@ -603,8 +599,8 @@ public class KSCEPCClientTest {
 
     @Test
     public void deleteProcess(){
-        AWSCredentials credentials = new BasicAWSCredentials("AKLTUnpB8vY3T0SwYFGprjj_7w","OGmPbxxelZZ/94zx7yna8fjA6pEaEaeqIv6PoV6sPnFET2/fhkUaz7ZwcVOOM0NW3Q==");
-        KSCEPCClient client = new KSCEPCClient(credentials);
+
+        KSCEPCClient client = new KSCEPCClient();
         client.setEndpoint("http://epc.inner.api.ksyun.com");
         client.setServiceNameIntern("epc");
         Region region = new Region(new InMemoryRegionImpl("cn-shanghai-3", null));
@@ -617,8 +613,8 @@ public class KSCEPCClientTest {
 
     @Test
     public void replyProcess(){
-        AWSCredentials credentials = new BasicAWSCredentials("AKLTUnpB8vY3T0SwYFGprjj_7w","OGmPbxxelZZ/94zx7yna8fjA6pEaEaeqIv6PoV6sPnFET2/fhkUaz7ZwcVOOM0NW3Q==");
-        KSCEPCClient client = new KSCEPCClient(credentials);
+
+        KSCEPCClient client = new KSCEPCClient();
         client.setEndpoint("http://epc.inner.api.ksyun.com");
         client.setServiceNameIntern("epc");
         Region region = new Region(new InMemoryRegionImpl("cn-shanghai-3", null));
@@ -632,8 +628,8 @@ public class KSCEPCClientTest {
 
     @Test
     public void createRemoteManagement(){
-        AWSCredentials credentials = new BasicAWSCredentials("AKLTUnpB8vY3T0SwYFGprjj_7w","OGmPbxxelZZ/94zx7yna8fjA6pEaEaeqIv6PoV6sPnFET2/fhkUaz7ZwcVOOM0NW3Q==");
-        KSCEPCClient client = new KSCEPCClient(credentials);
+
+        KSCEPCClient client = new KSCEPCClient();
         client.setEndpoint("http://epc.inner.api.ksyun.com");
         client.setServiceNameIntern("epc");
         Region region = new Region(new InMemoryRegionImpl("cn-shanghai-3", null));
@@ -648,8 +644,8 @@ public class KSCEPCClientTest {
 
     @Test
     public void getDynamicCode(){
-        AWSCredentials credentials = new BasicAWSCredentials("AKLTUnpB8vY3T0SwYFGprjj_7w","OGmPbxxelZZ/94zx7yna8fjA6pEaEaeqIv6PoV6sPnFET2/fhkUaz7ZwcVOOM0NW3Q==");
-        KSCEPCClient client = new KSCEPCClient(credentials);
+
+        KSCEPCClient client = new KSCEPCClient();
         client.setEndpoint("http://epc.inner.api.ksyun.com");
         client.setServiceNameIntern("epc");
         Region region = new Region(new InMemoryRegionImpl("cn-shanghai-3", null));
@@ -662,8 +658,8 @@ public class KSCEPCClientTest {
 
     @Test
     public void describeRemoteManagements(){
-        AWSCredentials credentials = new BasicAWSCredentials("AKLTUnpB8vY3T0SwYFGprjj_7w","OGmPbxxelZZ/94zx7yna8fjA6pEaEaeqIv6PoV6sPnFET2/fhkUaz7ZwcVOOM0NW3Q==");
-        KSCEPCClient client = new KSCEPCClient(credentials);
+
+        KSCEPCClient client = new KSCEPCClient();
         client.setEndpoint("http://epc.inner.api.ksyun.com");
         client.setServiceNameIntern("epc");
         Region region = new Region(new InMemoryRegionImpl("cn-shanghai-3", null));
@@ -675,8 +671,8 @@ public class KSCEPCClientTest {
 
     @Test
     public void modifyRemoteManagement(){
-        AWSCredentials credentials = new BasicAWSCredentials("AKLTUnpB8vY3T0SwYFGprjj_7w","OGmPbxxelZZ/94zx7yna8fjA6pEaEaeqIv6PoV6sPnFET2/fhkUaz7ZwcVOOM0NW3Q==");
-        KSCEPCClient client = new KSCEPCClient(credentials);
+
+        KSCEPCClient client = new KSCEPCClient();
         client.setEndpoint("http://epc.inner.api.ksyun.com");
         client.setServiceNameIntern("epc");
         Region region = new Region(new InMemoryRegionImpl("cn-shanghai-3", null));
@@ -690,8 +686,8 @@ public class KSCEPCClientTest {
 
     @Test
     public void deleteRemoteManagement(){
-        AWSCredentials credentials = new BasicAWSCredentials("AKLTUnpB8vY3T0SwYFGprjj_7w","OGmPbxxelZZ/94zx7yna8fjA6pEaEaeqIv6PoV6sPnFET2/fhkUaz7ZwcVOOM0NW3Q==");
-        KSCEPCClient client = new KSCEPCClient(credentials);
+
+        KSCEPCClient client = new KSCEPCClient();
         client.setEndpoint("http://epc.inner.api.ksyun.com");
         client.setServiceNameIntern("epc");
         Region region = new Region(new InMemoryRegionImpl("cn-shanghai-3", null));
@@ -704,8 +700,8 @@ public class KSCEPCClientTest {
 
     @Test
     public void describeEpcManagements(){
-        AWSCredentials credentials = new BasicAWSCredentials("AKLTUnpB8vY3T0SwYFGprjj_7w","OGmPbxxelZZ/94zx7yna8fjA6pEaEaeqIv6PoV6sPnFET2/fhkUaz7ZwcVOOM0NW3Q==");
-        KSCEPCClient client = new KSCEPCClient(credentials);
+
+        KSCEPCClient client = new KSCEPCClient();
         client.setEndpoint("http://epc.inner.api.ksyun.com");
         client.setServiceNameIntern("epc");
         Region region = new Region(new InMemoryRegionImpl("cn-shanghai-3", null));
@@ -717,8 +713,8 @@ public class KSCEPCClientTest {
 
     @Test
     public void describeVpns(){
-        AWSCredentials credentials = new BasicAWSCredentials("AKLTUnpB8vY3T0SwYFGprjj_7w","OGmPbxxelZZ/94zx7yna8fjA6pEaEaeqIv6PoV6sPnFET2/fhkUaz7ZwcVOOM0NW3Q==");
-        KSCEPCClient client = new KSCEPCClient(credentials);
+
+        KSCEPCClient client = new KSCEPCClient();
         client.setEndpoint("http://epc.inner.api.ksyun.com");
         client.setServiceNameIntern("epc");
         Region region = new Region(new InMemoryRegionImpl("cn-shanghai-3", null));
@@ -733,8 +729,8 @@ public class KSCEPCClientTest {
 
     @Test
     public void createResourceRequirement(){
-        AWSCredentials credentials = new BasicAWSCredentials("AKLTUnpB8vY3T0SwYFGprjj_7w","OGmPbxxelZZ/94zx7yna8fjA6pEaEaeqIv6PoV6sPnFET2/fhkUaz7ZwcVOOM0NW3Q==");
-        KSCEPCClient client = new KSCEPCClient(credentials);
+
+        KSCEPCClient client = new KSCEPCClient();
         client.setEndpoint("http://epc.inner.api.ksyun.com");
         client.setServiceNameIntern("epc");
         Region region = new Region(new InMemoryRegionImpl("cn-shanghai-3", null));
@@ -752,8 +748,8 @@ public class KSCEPCClientTest {
 
     @Test
     public void modifyResourceRequirement(){
-        AWSCredentials credentials = new BasicAWSCredentials("AKLTUnpB8vY3T0SwYFGprjj_7w","OGmPbxxelZZ/94zx7yna8fjA6pEaEaeqIv6PoV6sPnFET2/fhkUaz7ZwcVOOM0NW3Q==");
-        KSCEPCClient client = new KSCEPCClient(credentials);
+
+        KSCEPCClient client = new KSCEPCClient();
         client.setEndpoint("http://epc.inner.api.ksyun.com");
         client.setServiceNameIntern("epc");
         Region region = new Region(new InMemoryRegionImpl("cn-shanghai-3", null));
@@ -768,8 +764,8 @@ public class KSCEPCClientTest {
 
     @Test
     public void deleteResourceRequirement(){
-        AWSCredentials credentials = new BasicAWSCredentials("AKLTUnpB8vY3T0SwYFGprjj_7w","OGmPbxxelZZ/94zx7yna8fjA6pEaEaeqIv6PoV6sPnFET2/fhkUaz7ZwcVOOM0NW3Q==");
-        KSCEPCClient client = new KSCEPCClient(credentials);        client.setEndpoint("http://epc.inner.api.ksyun.com");
+
+        KSCEPCClient client = new KSCEPCClient();        client.setEndpoint("http://epc.inner.api.ksyun.com");
         client.setServiceNameIntern("epc");
         Region region = new Region(new InMemoryRegionImpl("cn-shanghai-3", null));
         client.setRegion(region);
@@ -781,8 +777,8 @@ public class KSCEPCClientTest {
 
     @Test
     public void describeResourceRequirements(){
-        AWSCredentials credentials = new BasicAWSCredentials("AKLTUnpB8vY3T0SwYFGprjj_7w","OGmPbxxelZZ/94zx7yna8fjA6pEaEaeqIv6PoV6sPnFET2/fhkUaz7ZwcVOOM0NW3Q==");
-        KSCEPCClient client = new KSCEPCClient(credentials);
+
+        KSCEPCClient client = new KSCEPCClient();
         client.setEndpoint("http://epc.inner.api.ksyun.com");
         client.setServiceNameIntern("epc");
         Region region = new Region(new InMemoryRegionImpl("cn-shanghai-3", null));
@@ -795,8 +791,8 @@ public class KSCEPCClientTest {
 
     @Test
     public void replyResourceRequirement(){
-        AWSCredentials credentials = new BasicAWSCredentials("AKLTUnpB8vY3T0SwYFGprjj_7w","OGmPbxxelZZ/94zx7yna8fjA6pEaEaeqIv6PoV6sPnFET2/fhkUaz7ZwcVOOM0NW3Q==");
-        KSCEPCClient client = new KSCEPCClient(credentials);
+
+        KSCEPCClient client = new KSCEPCClient();
         client.setEndpoint("http://epc.inner.api.ksyun.com");
         client.setServiceNameIntern("epc");
         Region region = new Region(new InMemoryRegionImpl("cn-shanghai-3", null));
